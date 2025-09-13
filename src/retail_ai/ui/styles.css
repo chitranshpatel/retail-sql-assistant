@@ -1,0 +1,21 @@
+/* Core styles extracted from app */
+.hero { padding: 1.2rem 1.2rem 0.8rem; border: 1px solid rgba(0,0,0,0.06); background: linear-gradient(180deg, #ffffff 0%, #f2f8ff 100%); border-radius: 16px; margin: 0 0 1rem 0; }
+.hero h1 { font-size: 2.35rem; line-height: 1.12; margin: 0 0 .35rem 0; letter-spacing: -0.02rem; font-weight: 800; }
+.hero p.lead.big { font-size: 1.15rem; line-height: 1.45; margin: .35rem 0 .65rem; color: #0f172a; font-weight: 700; }
+.badge { display:inline-block; padding: .2rem .5rem; border-radius: 999px; background:#eef2ff; color:#3730a3; font-weight:600; font-size:.8rem; border:1px solid rgba(0,0,0,0.06); }
+.badges { margin-top:.5rem; display:flex; gap:.4rem; flex-wrap:wrap; }
+.card { border:1px solid rgba(0,0,0,0.06); background:#ffffff; border-radius:12px; padding:.8rem; margin:.6rem 0; }
+.chips { display:flex; gap:.4rem; flex-wrap:wrap; margin:.35rem 0 .75rem; }
+.chip { background:#f1f5f9; border:1px solid rgba(0,0,0,0.06); border-radius:999px; padding:.2rem .55rem; font-weight:600; color:#334155; font-size:.8rem; }
+.hintline { font-size:1.05rem; font-weight:600; color:#075985; margin:.5rem 0 .8rem; }
+
+/* Sidebar width/readability */
+[data-testid="stSidebar"] { min-width: 320px; max-width: 380px; border-right: 1px solid rgba(0,0,0,0.05); }
+[data-testid="stSidebar"] [data-testid="stExpander"] summary { font-size: 1.0rem; font-weight: 700; }
+[data-testid="stSidebar"] label, [data-testid="stSidebar"] .stMarkdown, [data-testid="stSidebar"] .stCaption { font-size: 0.98rem; }
+
+/* Tables/tiles */
+.steps { list-style: decimal; padding-left:1.25rem; margin:.25rem 0 0; }
+.kpis { display:flex; gap:.75rem; flex-wrap:wrap; margin-top:.5rem; }
+.kpi { background:#f8fafc; border:1px solid rgba(0,0,0,0.06); border-radius:10px; padding:.4rem .6rem; font-size:.85rem; color:#334155; }
+

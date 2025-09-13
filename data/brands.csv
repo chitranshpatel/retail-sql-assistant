@@ -1,0 +1,165 @@
+brand,category,sub_category,promo_allowed
+CHIBrand01C,Snacks,Chips,True
+CHIBrand02C,Snacks,Chips,True
+CHIBrand03C,Snacks,Chips,True
+CHIBrand04C,Snacks,Chips,True
+CHIBrand05C,Snacks,Chips,True
+CHIBrand06C,Snacks,Chips,True
+CHIBrand07C,Snacks,Chips,True
+CHIBrand08C,Snacks,Chips,True
+CHIBrand09C,Snacks,Chips,True
+CHIBrand10C,Snacks,Chips,True
+BISBrand01B,Snacks,Biscuits,True
+BISBrand02B,Snacks,Biscuits,True
+BISBrand03B,Snacks,Biscuits,True
+BISBrand04B,Snacks,Biscuits,True
+BISBrand05B,Snacks,Biscuits,True
+BISBrand06B,Snacks,Biscuits,True
+BISBrand07B,Snacks,Biscuits,True
+BISBrand08B,Snacks,Biscuits,True
+BISBrand09B,Snacks,Biscuits,True
+BISBrand10B,Snacks,Biscuits,True
+BISBrand11B,Snacks,Biscuits,True
+BISBrand12B,Snacks,Biscuits,True
+NUTBrand01N,Snacks,Nuts,True
+NUTBrand02N,Snacks,Nuts,True
+NUTBrand03N,Snacks,Nuts,True
+NUTBrand04N,Snacks,Nuts,True
+NUTBrand05N,Snacks,Nuts,True
+CHOBrand01C,Confectionery,Chocolate,True
+CHOBrand02C,Confectionery,Chocolate,True
+CHOBrand03C,Confectionery,Chocolate,True
+CHOBrand04C,Confectionery,Chocolate,True
+CHOBrand05C,Confectionery,Chocolate,True
+CHOBrand06C,Confectionery,Chocolate,True
+CHOBrand07C,Confectionery,Chocolate,True
+CHOBrand08C,Confectionery,Chocolate,True
+CHOBrand09C,Confectionery,Chocolate,True
+CHOBrand10C,Confectionery,Chocolate,True
+LOLBrand01L,Confectionery,Lollies,True
+LOLBrand02L,Confectionery,Lollies,True
+LOLBrand03L,Confectionery,Lollies,True
+LOLBrand04L,Confectionery,Lollies,True
+LOLBrand05L,Confectionery,Lollies,True
+LOLBrand06L,Confectionery,Lollies,True
+LOLBrand07L,Confectionery,Lollies,True
+LOLBrand08L,Confectionery,Lollies,True
+LOLBrand09L,Confectionery,Lollies,True
+LOLBrand10L,Confectionery,Lollies,True
+LOLBrand11L,Confectionery,Lollies,True
+SOFBrand01D,Beverages,Soft Drinks,True
+SOFBrand02D,Beverages,Soft Drinks,True
+SOFBrand03D,Beverages,Soft Drinks,True
+SOFBrand04D,Beverages,Soft Drinks,True
+JUIBrand01J,Beverages,Juice,True
+JUIBrand02J,Beverages,Juice,True
+JUIBrand03J,Beverages,Juice,True
+JUIBrand04J,Beverages,Juice,True
+WATBrand01W,Beverages,Water,False
+WATBrand02W,Beverages,Water,False
+WATBrand03W,Beverages,Water,False
+WATBrand04W,Beverages,Water,False
+MILBrand01M,Dairy,Milk,False
+MILBrand02M,Dairy,Milk,False
+MILBrand03M,Dairy,Milk,False
+MILBrand04M,Dairy,Milk,False
+MILBrand05M,Dairy,Milk,False
+YOGBrand01Y,Dairy,Yoghurt,True
+YOGBrand02Y,Dairy,Yoghurt,True
+YOGBrand03Y,Dairy,Yoghurt,True
+YOGBrand04Y,Dairy,Yoghurt,True
+YOGBrand05Y,Dairy,Yoghurt,True
+YOGBrand06Y,Dairy,Yoghurt,True
+CHEBrand01C,Dairy,Cheese,True
+CHEBrand02C,Dairy,Cheese,True
+CHEBrand03C,Dairy,Cheese,True
+CHEBrand04C,Dairy,Cheese,True
+CHEBrand05C,Dairy,Cheese,True
+CHEBrand06C,Dairy,Cheese,True
+CHEBrand07C,Dairy,Cheese,True
+DIPBrand01D,Dairy,Dips,True
+DIPBrand02D,Dairy,Dips,True
+DIPBrand03D,Dairy,Dips,True
+DIPBrand04D,Dairy,Dips,True
+DIPBrand05D,Dairy,Dips,True
+DIPBrand06D,Dairy,Dips,True
+BREBrand01B,Bakery,Bread,False
+BREBrand02B,Bakery,Bread,False
+BREBrand03B,Bakery,Bread,False
+BREBrand04B,Bakery,Bread,False
+BREBrand05B,Bakery,Bread,False
+BREBrand06B,Bakery,Bread,False
+PASBrand01P,Bakery,Pastries,False
+PASBrand02P,Bakery,Pastries,False
+PASBrand03P,Bakery,Pastries,False
+PASBrand04P,Bakery,Pastries,False
+PASBrand05P,Bakery,Pastries,False
+PASBrand06P,Bakery,Pastries,False
+CAKBrand01C,Bakery,Cakes,False
+CAKBrand02C,Bakery,Cakes,False
+CAKBrand03C,Bakery,Cakes,False
+CAKBrand04C,Bakery,Cakes,False
+CAKBrand05C,Bakery,Cakes,False
+CAKBrand06C,Bakery,Cakes,False
+SOABrand01S,Toiletries,Soaps,True
+SOABrand02S,Toiletries,Soaps,True
+SOABrand03S,Toiletries,Soaps,True
+SOABrand04S,Toiletries,Soaps,True
+TOOBrand01T,Toiletries,Toothpaste,True
+TOOBrand02T,Toiletries,Toothpaste,True
+TOOBrand03T,Toiletries,Toothpaste,True
+TOOBrand04T,Toiletries,Toothpaste,True
+TOOBrand05T,Toiletries,Toothpaste,True
+DEOBrand01D,Toiletries,Deodorant,True
+DEOBrand02D,Toiletries,Deodorant,True
+DEOBrand03D,Toiletries,Deodorant,True
+DEOBrand04D,Toiletries,Deodorant,True
+DEOBrand05D,Toiletries,Deodorant,True
+DEOBrand06D,Toiletries,Deodorant,True
+BODBrand01W,Toiletries,Body Wash,True
+BODBrand02W,Toiletries,Body Wash,True
+BODBrand03W,Toiletries,Body Wash,True
+BODBrand04W,Toiletries,Body Wash,True
+BODBrand05W,Toiletries,Body Wash,True
+BODBrand06W,Toiletries,Body Wash,True
+BODBrand07W,Toiletries,Body Wash,True
+HANBrand01W,Toiletries,Hand Wash,True
+HANBrand02W,Toiletries,Hand Wash,True
+HANBrand03W,Toiletries,Hand Wash,True
+HANBrand04W,Toiletries,Hand Wash,True
+HANBrand05W,Toiletries,Hand Wash,True
+HANBrand06W,Toiletries,Hand Wash,True
+DISBrand01L,Cleaning,Dishwashing liquid,True
+DISBrand02L,Cleaning,Dishwashing liquid,True
+DISBrand03L,Cleaning,Dishwashing liquid,True
+DISBrand04L,Cleaning,Dishwashing liquid,True
+DISBrand05L,Cleaning,Dishwashing liquid,True
+DISBrand01T,Cleaning,Dishwashing tablet,True
+DISBrand02T,Cleaning,Dishwashing tablet,True
+DISBrand03T,Cleaning,Dishwashing tablet,True
+DISBrand04T,Cleaning,Dishwashing tablet,True
+DISBrand05T,Cleaning,Dishwashing tablet,True
+DISBrand06T,Cleaning,Dishwashing tablet,True
+LAUBrand01D,Cleaning,Laundry detergent,True
+LAUBrand02D,Cleaning,Laundry detergent,True
+LAUBrand03D,Cleaning,Laundry detergent,True
+LAUBrand04D,Cleaning,Laundry detergent,True
+LAUBrand05D,Cleaning,Laundry detergent,True
+LAUBrand06D,Cleaning,Laundry detergent,True
+LAUBrand07D,Cleaning,Laundry detergent,True
+CERBrand01C,Breakfast,Cereals,True
+CERBrand02C,Breakfast,Cereals,True
+CERBrand03C,Breakfast,Cereals,True
+CERBrand04C,Breakfast,Cereals,True
+CERBrand05C,Breakfast,Cereals,True
+CERBrand06C,Breakfast,Cereals,True
+CERBrand07C,Breakfast,Cereals,True
+CERBrand08C,Breakfast,Cereals,True
+CERBrand09C,Breakfast,Cereals,True
+CERBrand10C,Breakfast,Cereals,True
+OATBrand01O,Breakfast,Oats,True
+OATBrand02O,Breakfast,Oats,True
+OATBrand03O,Breakfast,Oats,True
+OATBrand04O,Breakfast,Oats,True
+OATBrand05O,Breakfast,Oats,True
+OATBrand06O,Breakfast,Oats,True

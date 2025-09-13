@@ -1,0 +1,756 @@
+article_no,product_name,brand,category,sub_category,regular_price,order_multiple,base_demand,is_high_velocity
+200000,CHIBrand01C Chips - Variant A,CHIBrand01C,Snacks,Chips,3.49,24,12,True
+200001,CHIBrand01C Chips - Variant B,CHIBrand01C,Snacks,Chips,3.49,6,10,True
+200002,CHIBrand01C Chips - Variant C,CHIBrand01C,Snacks,Chips,3.49,12,12,True
+200003,CHIBrand01C Chips - Variant D,CHIBrand01C,Snacks,Chips,3.49,24,8,True
+200004,CHIBrand01C Chips - Variant E,CHIBrand01C,Snacks,Chips,3.49,24,8,True
+200005,CHIBrand01C Chips - Variant F,CHIBrand01C,Snacks,Chips,3.49,24,10,True
+200006,CHIBrand02C Chips - Variant A,CHIBrand02C,Snacks,Chips,2.09,12,9,True
+200007,CHIBrand02C Chips - Variant B,CHIBrand02C,Snacks,Chips,2.09,12,11,True
+200008,CHIBrand02C Chips - Variant C,CHIBrand02C,Snacks,Chips,2.09,6,9,True
+200009,CHIBrand02C Chips - Variant D,CHIBrand02C,Snacks,Chips,2.09,12,6,False
+200010,CHIBrand02C Chips - Variant E,CHIBrand02C,Snacks,Chips,2.09,6,11,True
+200011,CHIBrand02C Chips - Variant F,CHIBrand02C,Snacks,Chips,2.09,6,9,True
+200012,CHIBrand02C Chips - Variant G,CHIBrand02C,Snacks,Chips,2.09,24,6,False
+200013,CHIBrand03C Chips - Variant A,CHIBrand03C,Snacks,Chips,4.39,24,9,True
+200014,CHIBrand03C Chips - Variant B,CHIBrand03C,Snacks,Chips,4.39,12,11,True
+200015,CHIBrand03C Chips - Variant C,CHIBrand03C,Snacks,Chips,4.39,12,12,True
+200016,CHIBrand03C Chips - Variant D,CHIBrand03C,Snacks,Chips,4.39,24,8,True
+200017,CHIBrand03C Chips - Variant E,CHIBrand03C,Snacks,Chips,4.39,6,9,True
+200018,CHIBrand03C Chips - Variant F,CHIBrand03C,Snacks,Chips,4.39,6,8,True
+200019,CHIBrand03C Chips - Variant G,CHIBrand03C,Snacks,Chips,4.39,24,8,True
+200020,CHIBrand04C Chips - Variant A,CHIBrand04C,Snacks,Chips,2.69,6,7,False
+200021,CHIBrand04C Chips - Variant B,CHIBrand04C,Snacks,Chips,2.69,12,9,True
+200022,CHIBrand04C Chips - Variant C,CHIBrand04C,Snacks,Chips,2.69,12,7,False
+200023,CHIBrand04C Chips - Variant D,CHIBrand04C,Snacks,Chips,2.69,12,6,False
+200024,CHIBrand04C Chips - Variant E,CHIBrand04C,Snacks,Chips,2.69,12,10,True
+200025,CHIBrand04C Chips - Variant F,CHIBrand04C,Snacks,Chips,2.69,24,9,True
+200026,CHIBrand05C Chips - Variant A,CHIBrand05C,Snacks,Chips,4.69,24,10,True
+200027,CHIBrand05C Chips - Variant B,CHIBrand05C,Snacks,Chips,4.69,12,8,True
+200028,CHIBrand05C Chips - Variant C,CHIBrand05C,Snacks,Chips,4.69,12,6,False
+200029,CHIBrand05C Chips - Variant D,CHIBrand05C,Snacks,Chips,4.69,12,9,True
+200030,CHIBrand05C Chips - Variant E,CHIBrand05C,Snacks,Chips,4.69,12,11,True
+200031,CHIBrand05C Chips - Variant F,CHIBrand05C,Snacks,Chips,4.69,12,11,True
+200032,CHIBrand05C Chips - Variant G,CHIBrand05C,Snacks,Chips,4.69,12,9,True
+200033,CHIBrand06C Chips - Variant A,CHIBrand06C,Snacks,Chips,2.09,12,7,False
+200034,CHIBrand06C Chips - Variant B,CHIBrand06C,Snacks,Chips,2.09,12,7,False
+200035,CHIBrand06C Chips - Variant C,CHIBrand06C,Snacks,Chips,2.09,12,9,True
+200036,CHIBrand06C Chips - Variant D,CHIBrand06C,Snacks,Chips,2.09,24,12,True
+200037,CHIBrand06C Chips - Variant E,CHIBrand06C,Snacks,Chips,2.09,24,11,True
+200038,CHIBrand06C Chips - Variant F,CHIBrand06C,Snacks,Chips,2.09,6,9,True
+200039,CHIBrand06C Chips - Variant G,CHIBrand06C,Snacks,Chips,2.09,6,11,True
+200040,CHIBrand07C Chips - Variant A,CHIBrand07C,Snacks,Chips,3.59,6,12,True
+200041,CHIBrand07C Chips - Variant B,CHIBrand07C,Snacks,Chips,3.59,6,7,False
+200042,CHIBrand07C Chips - Variant C,CHIBrand07C,Snacks,Chips,3.59,6,9,True
+200043,CHIBrand07C Chips - Variant D,CHIBrand07C,Snacks,Chips,3.59,6,6,False
+200044,CHIBrand07C Chips - Variant E,CHIBrand07C,Snacks,Chips,3.59,6,12,True
+200045,CHIBrand07C Chips - Variant F,CHIBrand07C,Snacks,Chips,3.59,6,6,False
+200046,CHIBrand07C Chips - Variant G,CHIBrand07C,Snacks,Chips,3.59,6,12,True
+200047,CHIBrand08C Chips - Variant A,CHIBrand08C,Snacks,Chips,5.09,24,12,True
+200048,CHIBrand08C Chips - Variant B,CHIBrand08C,Snacks,Chips,5.09,6,8,True
+200049,CHIBrand08C Chips - Variant C,CHIBrand08C,Snacks,Chips,5.09,24,8,True
+200050,CHIBrand08C Chips - Variant D,CHIBrand08C,Snacks,Chips,5.09,24,6,False
+200051,CHIBrand08C Chips - Variant E,CHIBrand08C,Snacks,Chips,5.09,12,10,True
+200052,CHIBrand08C Chips - Variant F,CHIBrand08C,Snacks,Chips,5.09,12,12,True
+200053,CHIBrand08C Chips - Variant G,CHIBrand08C,Snacks,Chips,5.09,24,6,False
+200054,CHIBrand09C Chips - Variant A,CHIBrand09C,Snacks,Chips,5.39,6,7,False
+200055,CHIBrand09C Chips - Variant B,CHIBrand09C,Snacks,Chips,5.39,24,12,True
+200056,CHIBrand09C Chips - Variant C,CHIBrand09C,Snacks,Chips,5.39,6,11,True
+200057,CHIBrand09C Chips - Variant D,CHIBrand09C,Snacks,Chips,5.39,12,8,True
+200058,CHIBrand09C Chips - Variant E,CHIBrand09C,Snacks,Chips,5.39,24,8,True
+200059,CHIBrand09C Chips - Variant F,CHIBrand09C,Snacks,Chips,5.39,24,6,False
+200060,CHIBrand09C Chips - Variant G,CHIBrand09C,Snacks,Chips,5.39,24,10,True
+200061,CHIBrand10C Chips - Variant A,CHIBrand10C,Snacks,Chips,4.89,12,10,True
+200062,CHIBrand10C Chips - Variant B,CHIBrand10C,Snacks,Chips,4.89,24,12,True
+200063,CHIBrand10C Chips - Variant C,CHIBrand10C,Snacks,Chips,4.89,24,11,True
+200064,CHIBrand10C Chips - Variant D,CHIBrand10C,Snacks,Chips,4.89,6,8,True
+200065,CHIBrand10C Chips - Variant E,CHIBrand10C,Snacks,Chips,4.89,24,12,True
+200066,CHIBrand10C Chips - Variant F,CHIBrand10C,Snacks,Chips,4.89,12,7,False
+200067,BISBrand01B Biscuits - Variant A,BISBrand01B,Snacks,Biscuits,3.79,24,12,True
+200068,BISBrand01B Biscuits - Variant B,BISBrand01B,Snacks,Biscuits,3.79,6,6,False
+200069,BISBrand01B Biscuits - Variant C,BISBrand01B,Snacks,Biscuits,3.79,12,9,True
+200070,BISBrand01B Biscuits - Variant D,BISBrand01B,Snacks,Biscuits,3.79,24,10,True
+200071,BISBrand01B Biscuits - Variant E,BISBrand01B,Snacks,Biscuits,3.79,6,12,True
+200072,BISBrand01B Biscuits - Variant F,BISBrand01B,Snacks,Biscuits,3.79,24,12,True
+200073,BISBrand02B Biscuits - Variant A,BISBrand02B,Snacks,Biscuits,2.79,24,12,True
+200074,BISBrand02B Biscuits - Variant B,BISBrand02B,Snacks,Biscuits,2.79,12,8,True
+200075,BISBrand02B Biscuits - Variant C,BISBrand02B,Snacks,Biscuits,2.79,12,9,True
+200076,BISBrand02B Biscuits - Variant D,BISBrand02B,Snacks,Biscuits,2.79,6,7,False
+200077,BISBrand02B Biscuits - Variant E,BISBrand02B,Snacks,Biscuits,2.79,6,11,True
+200078,BISBrand02B Biscuits - Variant F,BISBrand02B,Snacks,Biscuits,2.79,12,10,True
+200079,BISBrand03B Biscuits - Variant A,BISBrand03B,Snacks,Biscuits,3.79,12,9,True
+200080,BISBrand03B Biscuits - Variant B,BISBrand03B,Snacks,Biscuits,3.79,24,11,True
+200081,BISBrand03B Biscuits - Variant C,BISBrand03B,Snacks,Biscuits,3.79,24,7,False
+200082,BISBrand03B Biscuits - Variant D,BISBrand03B,Snacks,Biscuits,3.79,6,9,True
+200083,BISBrand03B Biscuits - Variant E,BISBrand03B,Snacks,Biscuits,3.79,12,12,True
+200084,BISBrand03B Biscuits - Variant F,BISBrand03B,Snacks,Biscuits,3.79,6,6,False
+200085,BISBrand03B Biscuits - Variant G,BISBrand03B,Snacks,Biscuits,3.79,24,6,False
+200086,BISBrand04B Biscuits - Variant A,BISBrand04B,Snacks,Biscuits,3.69,6,10,True
+200087,BISBrand04B Biscuits - Variant B,BISBrand04B,Snacks,Biscuits,3.69,24,8,True
+200088,BISBrand04B Biscuits - Variant C,BISBrand04B,Snacks,Biscuits,3.69,24,11,True
+200089,BISBrand04B Biscuits - Variant D,BISBrand04B,Snacks,Biscuits,3.69,12,6,False
+200090,BISBrand04B Biscuits - Variant E,BISBrand04B,Snacks,Biscuits,3.69,6,10,True
+200091,BISBrand04B Biscuits - Variant F,BISBrand04B,Snacks,Biscuits,3.69,12,8,True
+200092,BISBrand04B Biscuits - Variant G,BISBrand04B,Snacks,Biscuits,3.69,24,9,True
+200093,BISBrand05B Biscuits - Variant A,BISBrand05B,Snacks,Biscuits,2.69,6,6,False
+200094,BISBrand05B Biscuits - Variant B,BISBrand05B,Snacks,Biscuits,2.69,6,11,True
+200095,BISBrand05B Biscuits - Variant C,BISBrand05B,Snacks,Biscuits,2.69,12,7,False
+200096,BISBrand05B Biscuits - Variant D,BISBrand05B,Snacks,Biscuits,2.69,12,12,True
+200097,BISBrand05B Biscuits - Variant E,BISBrand05B,Snacks,Biscuits,2.69,6,8,True
+200098,BISBrand05B Biscuits - Variant F,BISBrand05B,Snacks,Biscuits,2.69,6,10,True
+200099,BISBrand05B Biscuits - Variant G,BISBrand05B,Snacks,Biscuits,2.69,24,6,False
+200100,BISBrand06B Biscuits - Variant A,BISBrand06B,Snacks,Biscuits,4.39,12,9,True
+200101,BISBrand06B Biscuits - Variant B,BISBrand06B,Snacks,Biscuits,4.39,6,12,True
+200102,BISBrand06B Biscuits - Variant C,BISBrand06B,Snacks,Biscuits,4.39,6,6,False
+200103,BISBrand06B Biscuits - Variant D,BISBrand06B,Snacks,Biscuits,4.39,12,8,True
+200104,BISBrand06B Biscuits - Variant E,BISBrand06B,Snacks,Biscuits,4.39,6,7,False
+200105,BISBrand06B Biscuits - Variant F,BISBrand06B,Snacks,Biscuits,4.39,12,9,True
+200106,BISBrand06B Biscuits - Variant G,BISBrand06B,Snacks,Biscuits,4.39,24,11,True
+200107,BISBrand07B Biscuits - Variant A,BISBrand07B,Snacks,Biscuits,4.69,6,8,True
+200108,BISBrand07B Biscuits - Variant B,BISBrand07B,Snacks,Biscuits,4.69,12,12,True
+200109,BISBrand07B Biscuits - Variant C,BISBrand07B,Snacks,Biscuits,4.69,12,10,True
+200110,BISBrand07B Biscuits - Variant D,BISBrand07B,Snacks,Biscuits,4.69,12,11,True
+200111,BISBrand07B Biscuits - Variant E,BISBrand07B,Snacks,Biscuits,4.69,24,8,True
+200112,BISBrand07B Biscuits - Variant F,BISBrand07B,Snacks,Biscuits,4.69,6,6,False
+200113,BISBrand08B Biscuits - Variant A,BISBrand08B,Snacks,Biscuits,3.29,24,10,True
+200114,BISBrand08B Biscuits - Variant B,BISBrand08B,Snacks,Biscuits,3.29,24,9,True
+200115,BISBrand08B Biscuits - Variant C,BISBrand08B,Snacks,Biscuits,3.29,24,9,True
+200116,BISBrand08B Biscuits - Variant D,BISBrand08B,Snacks,Biscuits,3.29,24,7,False
+200117,BISBrand08B Biscuits - Variant E,BISBrand08B,Snacks,Biscuits,3.29,24,12,True
+200118,BISBrand08B Biscuits - Variant F,BISBrand08B,Snacks,Biscuits,3.29,24,9,True
+200119,BISBrand08B Biscuits - Variant G,BISBrand08B,Snacks,Biscuits,3.29,6,9,True
+200120,BISBrand09B Biscuits - Variant A,BISBrand09B,Snacks,Biscuits,4.79,12,12,True
+200121,BISBrand09B Biscuits - Variant B,BISBrand09B,Snacks,Biscuits,4.79,24,6,False
+200122,BISBrand09B Biscuits - Variant C,BISBrand09B,Snacks,Biscuits,4.79,6,9,True
+200123,BISBrand09B Biscuits - Variant D,BISBrand09B,Snacks,Biscuits,4.79,12,6,False
+200124,BISBrand09B Biscuits - Variant E,BISBrand09B,Snacks,Biscuits,4.79,24,12,True
+200125,BISBrand09B Biscuits - Variant F,BISBrand09B,Snacks,Biscuits,4.79,12,11,True
+200126,BISBrand09B Biscuits - Variant G,BISBrand09B,Snacks,Biscuits,4.79,24,8,True
+200127,BISBrand10B Biscuits - Variant A,BISBrand10B,Snacks,Biscuits,4.59,6,6,False
+200128,BISBrand10B Biscuits - Variant B,BISBrand10B,Snacks,Biscuits,4.59,6,7,False
+200129,BISBrand10B Biscuits - Variant C,BISBrand10B,Snacks,Biscuits,4.59,6,11,True
+200130,BISBrand10B Biscuits - Variant D,BISBrand10B,Snacks,Biscuits,4.59,24,10,True
+200131,BISBrand10B Biscuits - Variant E,BISBrand10B,Snacks,Biscuits,4.59,6,12,True
+200132,BISBrand10B Biscuits - Variant F,BISBrand10B,Snacks,Biscuits,4.59,24,6,False
+200133,BISBrand10B Biscuits - Variant G,BISBrand10B,Snacks,Biscuits,4.59,24,8,True
+200134,BISBrand11B Biscuits - Variant A,BISBrand11B,Snacks,Biscuits,5.39,24,6,False
+200135,BISBrand11B Biscuits - Variant B,BISBrand11B,Snacks,Biscuits,5.39,12,6,False
+200136,BISBrand11B Biscuits - Variant C,BISBrand11B,Snacks,Biscuits,5.39,12,9,True
+200137,BISBrand11B Biscuits - Variant D,BISBrand11B,Snacks,Biscuits,5.39,12,8,True
+200138,BISBrand11B Biscuits - Variant E,BISBrand11B,Snacks,Biscuits,5.39,24,6,False
+200139,BISBrand11B Biscuits - Variant F,BISBrand11B,Snacks,Biscuits,5.39,6,6,False
+200140,BISBrand11B Biscuits - Variant G,BISBrand11B,Snacks,Biscuits,5.39,12,7,False
+200141,BISBrand12B Biscuits - Variant A,BISBrand12B,Snacks,Biscuits,4.19,6,8,True
+200142,BISBrand12B Biscuits - Variant B,BISBrand12B,Snacks,Biscuits,4.19,6,6,False
+200143,BISBrand12B Biscuits - Variant C,BISBrand12B,Snacks,Biscuits,4.19,6,9,True
+200144,BISBrand12B Biscuits - Variant D,BISBrand12B,Snacks,Biscuits,4.19,6,11,True
+200145,BISBrand12B Biscuits - Variant E,BISBrand12B,Snacks,Biscuits,4.19,24,9,True
+200146,BISBrand12B Biscuits - Variant F,BISBrand12B,Snacks,Biscuits,4.19,6,8,True
+200147,BISBrand12B Biscuits - Variant G,BISBrand12B,Snacks,Biscuits,4.19,24,6,False
+200148,NUTBrand01N Nuts - Variant A,NUTBrand01N,Snacks,Nuts,3.49,12,11,True
+200149,NUTBrand01N Nuts - Variant B,NUTBrand01N,Snacks,Nuts,3.49,12,11,True
+200150,NUTBrand01N Nuts - Variant C,NUTBrand01N,Snacks,Nuts,3.49,6,11,True
+200151,NUTBrand01N Nuts - Variant D,NUTBrand01N,Snacks,Nuts,3.49,12,8,True
+200152,NUTBrand02N Nuts - Variant A,NUTBrand02N,Snacks,Nuts,5.59,6,7,False
+200153,NUTBrand02N Nuts - Variant B,NUTBrand02N,Snacks,Nuts,5.59,6,11,True
+200154,NUTBrand02N Nuts - Variant C,NUTBrand02N,Snacks,Nuts,5.59,24,9,True
+200155,NUTBrand02N Nuts - Variant D,NUTBrand02N,Snacks,Nuts,5.59,6,6,False
+200156,NUTBrand03N Nuts - Variant A,NUTBrand03N,Snacks,Nuts,2.89,24,8,True
+200157,NUTBrand03N Nuts - Variant B,NUTBrand03N,Snacks,Nuts,2.89,6,6,False
+200158,NUTBrand03N Nuts - Variant C,NUTBrand03N,Snacks,Nuts,2.89,12,9,True
+200159,NUTBrand03N Nuts - Variant D,NUTBrand03N,Snacks,Nuts,2.89,12,10,True
+200160,NUTBrand03N Nuts - Variant E,NUTBrand03N,Snacks,Nuts,2.89,12,10,True
+200161,NUTBrand04N Nuts - Variant A,NUTBrand04N,Snacks,Nuts,3.49,6,10,True
+200162,NUTBrand04N Nuts - Variant B,NUTBrand04N,Snacks,Nuts,3.49,12,6,False
+200163,NUTBrand04N Nuts - Variant C,NUTBrand04N,Snacks,Nuts,3.49,24,10,True
+200164,NUTBrand04N Nuts - Variant D,NUTBrand04N,Snacks,Nuts,3.49,6,8,True
+200165,NUTBrand05N Nuts - Variant A,NUTBrand05N,Snacks,Nuts,2.29,24,10,True
+200166,NUTBrand05N Nuts - Variant B,NUTBrand05N,Snacks,Nuts,2.29,24,6,False
+200167,NUTBrand05N Nuts - Variant C,NUTBrand05N,Snacks,Nuts,2.29,6,7,False
+200168,NUTBrand05N Nuts - Variant D,NUTBrand05N,Snacks,Nuts,2.29,24,7,False
+200169,CHOBrand01C Chocolate - Variant A,CHOBrand01C,Confectionery,Chocolate,4.49,12,10,True
+200170,CHOBrand01C Chocolate - Variant B,CHOBrand01C,Confectionery,Chocolate,4.49,12,11,True
+200171,CHOBrand01C Chocolate - Variant C,CHOBrand01C,Confectionery,Chocolate,4.49,12,11,True
+200172,CHOBrand01C Chocolate - Variant D,CHOBrand01C,Confectionery,Chocolate,4.49,24,11,True
+200173,CHOBrand01C Chocolate - Variant E,CHOBrand01C,Confectionery,Chocolate,4.49,12,6,False
+200174,CHOBrand01C Chocolate - Variant F,CHOBrand01C,Confectionery,Chocolate,4.49,6,6,False
+200175,CHOBrand02C Chocolate - Variant A,CHOBrand02C,Confectionery,Chocolate,4.49,12,7,False
+200176,CHOBrand02C Chocolate - Variant B,CHOBrand02C,Confectionery,Chocolate,4.49,6,11,True
+200177,CHOBrand02C Chocolate - Variant C,CHOBrand02C,Confectionery,Chocolate,4.49,24,6,False
+200178,CHOBrand02C Chocolate - Variant D,CHOBrand02C,Confectionery,Chocolate,4.49,24,6,False
+200179,CHOBrand02C Chocolate - Variant E,CHOBrand02C,Confectionery,Chocolate,4.49,6,6,False
+200180,CHOBrand02C Chocolate - Variant F,CHOBrand02C,Confectionery,Chocolate,4.49,12,9,True
+200181,CHOBrand03C Chocolate - Variant A,CHOBrand03C,Confectionery,Chocolate,1.49,6,9,True
+200182,CHOBrand03C Chocolate - Variant B,CHOBrand03C,Confectionery,Chocolate,1.49,12,10,True
+200183,CHOBrand03C Chocolate - Variant C,CHOBrand03C,Confectionery,Chocolate,1.49,24,8,True
+200184,CHOBrand03C Chocolate - Variant D,CHOBrand03C,Confectionery,Chocolate,1.49,24,11,True
+200185,CHOBrand03C Chocolate - Variant E,CHOBrand03C,Confectionery,Chocolate,1.49,12,8,True
+200186,CHOBrand03C Chocolate - Variant F,CHOBrand03C,Confectionery,Chocolate,1.49,24,6,False
+200187,CHOBrand03C Chocolate - Variant G,CHOBrand03C,Confectionery,Chocolate,1.49,12,11,True
+200188,CHOBrand04C Chocolate - Variant A,CHOBrand04C,Confectionery,Chocolate,2.59,12,11,True
+200189,CHOBrand04C Chocolate - Variant B,CHOBrand04C,Confectionery,Chocolate,2.59,12,9,True
+200190,CHOBrand04C Chocolate - Variant C,CHOBrand04C,Confectionery,Chocolate,2.59,12,6,False
+200191,CHOBrand04C Chocolate - Variant D,CHOBrand04C,Confectionery,Chocolate,2.59,6,10,True
+200192,CHOBrand04C Chocolate - Variant E,CHOBrand04C,Confectionery,Chocolate,2.59,12,8,True
+200193,CHOBrand04C Chocolate - Variant F,CHOBrand04C,Confectionery,Chocolate,2.59,24,10,True
+200194,CHOBrand04C Chocolate - Variant G,CHOBrand04C,Confectionery,Chocolate,2.59,24,10,True
+200195,CHOBrand05C Chocolate - Variant A,CHOBrand05C,Confectionery,Chocolate,1.89,6,9,True
+200196,CHOBrand05C Chocolate - Variant B,CHOBrand05C,Confectionery,Chocolate,1.89,12,11,True
+200197,CHOBrand05C Chocolate - Variant C,CHOBrand05C,Confectionery,Chocolate,1.89,12,9,True
+200198,CHOBrand05C Chocolate - Variant D,CHOBrand05C,Confectionery,Chocolate,1.89,24,11,True
+200199,CHOBrand05C Chocolate - Variant E,CHOBrand05C,Confectionery,Chocolate,1.89,6,11,True
+200200,CHOBrand05C Chocolate - Variant F,CHOBrand05C,Confectionery,Chocolate,1.89,12,6,False
+200201,CHOBrand06C Chocolate - Variant A,CHOBrand06C,Confectionery,Chocolate,2.59,24,11,True
+200202,CHOBrand06C Chocolate - Variant B,CHOBrand06C,Confectionery,Chocolate,2.59,12,8,True
+200203,CHOBrand06C Chocolate - Variant C,CHOBrand06C,Confectionery,Chocolate,2.59,12,11,True
+200204,CHOBrand06C Chocolate - Variant D,CHOBrand06C,Confectionery,Chocolate,2.59,12,9,True
+200205,CHOBrand06C Chocolate - Variant E,CHOBrand06C,Confectionery,Chocolate,2.59,12,9,True
+200206,CHOBrand06C Chocolate - Variant F,CHOBrand06C,Confectionery,Chocolate,2.59,24,11,True
+200207,CHOBrand07C Chocolate - Variant A,CHOBrand07C,Confectionery,Chocolate,3.89,12,5,False
+200208,CHOBrand07C Chocolate - Variant B,CHOBrand07C,Confectionery,Chocolate,3.89,6,6,False
+200209,CHOBrand07C Chocolate - Variant C,CHOBrand07C,Confectionery,Chocolate,3.89,12,11,True
+200210,CHOBrand07C Chocolate - Variant D,CHOBrand07C,Confectionery,Chocolate,3.89,12,10,True
+200211,CHOBrand07C Chocolate - Variant E,CHOBrand07C,Confectionery,Chocolate,3.89,6,5,False
+200212,CHOBrand07C Chocolate - Variant F,CHOBrand07C,Confectionery,Chocolate,3.89,6,9,True
+200213,CHOBrand08C Chocolate - Variant A,CHOBrand08C,Confectionery,Chocolate,4.79,6,11,True
+200214,CHOBrand08C Chocolate - Variant B,CHOBrand08C,Confectionery,Chocolate,4.79,6,10,True
+200215,CHOBrand08C Chocolate - Variant C,CHOBrand08C,Confectionery,Chocolate,4.79,24,11,True
+200216,CHOBrand08C Chocolate - Variant D,CHOBrand08C,Confectionery,Chocolate,4.79,12,8,True
+200217,CHOBrand08C Chocolate - Variant E,CHOBrand08C,Confectionery,Chocolate,4.79,6,7,False
+200218,CHOBrand08C Chocolate - Variant F,CHOBrand08C,Confectionery,Chocolate,4.79,6,10,True
+200219,CHOBrand09C Chocolate - Variant A,CHOBrand09C,Confectionery,Chocolate,2.69,24,9,True
+200220,CHOBrand09C Chocolate - Variant B,CHOBrand09C,Confectionery,Chocolate,2.69,12,5,False
+200221,CHOBrand09C Chocolate - Variant C,CHOBrand09C,Confectionery,Chocolate,2.69,12,10,True
+200222,CHOBrand09C Chocolate - Variant D,CHOBrand09C,Confectionery,Chocolate,2.69,6,8,True
+200223,CHOBrand09C Chocolate - Variant E,CHOBrand09C,Confectionery,Chocolate,2.69,12,8,True
+200224,CHOBrand09C Chocolate - Variant F,CHOBrand09C,Confectionery,Chocolate,2.69,6,6,False
+200225,CHOBrand09C Chocolate - Variant G,CHOBrand09C,Confectionery,Chocolate,2.69,6,11,True
+200226,CHOBrand10C Chocolate - Variant A,CHOBrand10C,Confectionery,Chocolate,3.09,12,11,True
+200227,CHOBrand10C Chocolate - Variant B,CHOBrand10C,Confectionery,Chocolate,3.09,12,6,False
+200228,CHOBrand10C Chocolate - Variant C,CHOBrand10C,Confectionery,Chocolate,3.09,12,9,True
+200229,CHOBrand10C Chocolate - Variant D,CHOBrand10C,Confectionery,Chocolate,3.09,24,8,True
+200230,CHOBrand10C Chocolate - Variant E,CHOBrand10C,Confectionery,Chocolate,3.09,12,6,False
+200231,CHOBrand10C Chocolate - Variant F,CHOBrand10C,Confectionery,Chocolate,3.09,12,7,False
+200232,LOLBrand01L Lollies - Variant A,LOLBrand01L,Confectionery,Lollies,3.29,6,9,True
+200233,LOLBrand01L Lollies - Variant B,LOLBrand01L,Confectionery,Lollies,3.29,24,8,True
+200234,LOLBrand01L Lollies - Variant C,LOLBrand01L,Confectionery,Lollies,3.29,6,6,False
+200235,LOLBrand01L Lollies - Variant D,LOLBrand01L,Confectionery,Lollies,3.29,24,8,True
+200236,LOLBrand01L Lollies - Variant E,LOLBrand01L,Confectionery,Lollies,3.29,12,8,True
+200237,LOLBrand01L Lollies - Variant F,LOLBrand01L,Confectionery,Lollies,3.29,6,7,False
+200238,LOLBrand01L Lollies - Variant G,LOLBrand01L,Confectionery,Lollies,3.29,6,5,False
+200239,LOLBrand02L Lollies - Variant A,LOLBrand02L,Confectionery,Lollies,3.39,24,8,True
+200240,LOLBrand02L Lollies - Variant B,LOLBrand02L,Confectionery,Lollies,3.39,6,5,False
+200241,LOLBrand02L Lollies - Variant C,LOLBrand02L,Confectionery,Lollies,3.39,24,6,False
+200242,LOLBrand02L Lollies - Variant D,LOLBrand02L,Confectionery,Lollies,3.39,6,8,True
+200243,LOLBrand02L Lollies - Variant E,LOLBrand02L,Confectionery,Lollies,3.39,24,9,True
+200244,LOLBrand02L Lollies - Variant F,LOLBrand02L,Confectionery,Lollies,3.39,12,10,True
+200245,LOLBrand03L Lollies - Variant A,LOLBrand03L,Confectionery,Lollies,1.59,24,7,False
+200246,LOLBrand03L Lollies - Variant B,LOLBrand03L,Confectionery,Lollies,1.59,12,5,False
+200247,LOLBrand03L Lollies - Variant C,LOLBrand03L,Confectionery,Lollies,1.59,12,9,True
+200248,LOLBrand03L Lollies - Variant D,LOLBrand03L,Confectionery,Lollies,1.59,12,6,False
+200249,LOLBrand03L Lollies - Variant E,LOLBrand03L,Confectionery,Lollies,1.59,12,10,True
+200250,LOLBrand03L Lollies - Variant F,LOLBrand03L,Confectionery,Lollies,1.59,6,7,False
+200251,LOLBrand03L Lollies - Variant G,LOLBrand03L,Confectionery,Lollies,1.59,12,11,True
+200252,LOLBrand04L Lollies - Variant A,LOLBrand04L,Confectionery,Lollies,3.89,6,7,False
+200253,LOLBrand04L Lollies - Variant B,LOLBrand04L,Confectionery,Lollies,3.89,6,8,True
+200254,LOLBrand04L Lollies - Variant C,LOLBrand04L,Confectionery,Lollies,3.89,6,9,True
+200255,LOLBrand04L Lollies - Variant D,LOLBrand04L,Confectionery,Lollies,3.89,12,5,False
+200256,LOLBrand04L Lollies - Variant E,LOLBrand04L,Confectionery,Lollies,3.89,6,9,True
+200257,LOLBrand04L Lollies - Variant F,LOLBrand04L,Confectionery,Lollies,3.89,6,7,False
+200258,LOLBrand05L Lollies - Variant A,LOLBrand05L,Confectionery,Lollies,4.09,6,6,False
+200259,LOLBrand05L Lollies - Variant B,LOLBrand05L,Confectionery,Lollies,4.09,24,11,True
+200260,LOLBrand05L Lollies - Variant C,LOLBrand05L,Confectionery,Lollies,4.09,6,10,True
+200261,LOLBrand05L Lollies - Variant D,LOLBrand05L,Confectionery,Lollies,4.09,6,8,True
+200262,LOLBrand05L Lollies - Variant E,LOLBrand05L,Confectionery,Lollies,4.09,6,11,True
+200263,LOLBrand05L Lollies - Variant F,LOLBrand05L,Confectionery,Lollies,4.09,6,11,True
+200264,LOLBrand05L Lollies - Variant G,LOLBrand05L,Confectionery,Lollies,4.09,6,7,False
+200265,LOLBrand06L Lollies - Variant A,LOLBrand06L,Confectionery,Lollies,2.79,6,10,True
+200266,LOLBrand06L Lollies - Variant B,LOLBrand06L,Confectionery,Lollies,2.79,6,10,True
+200267,LOLBrand06L Lollies - Variant C,LOLBrand06L,Confectionery,Lollies,2.79,24,7,False
+200268,LOLBrand06L Lollies - Variant D,LOLBrand06L,Confectionery,Lollies,2.79,6,5,False
+200269,LOLBrand06L Lollies - Variant E,LOLBrand06L,Confectionery,Lollies,2.79,24,5,False
+200270,LOLBrand06L Lollies - Variant F,LOLBrand06L,Confectionery,Lollies,2.79,6,8,True
+200271,LOLBrand07L Lollies - Variant A,LOLBrand07L,Confectionery,Lollies,2.59,24,11,True
+200272,LOLBrand07L Lollies - Variant B,LOLBrand07L,Confectionery,Lollies,2.59,24,6,False
+200273,LOLBrand07L Lollies - Variant C,LOLBrand07L,Confectionery,Lollies,2.59,6,9,True
+200274,LOLBrand07L Lollies - Variant D,LOLBrand07L,Confectionery,Lollies,2.59,6,7,False
+200275,LOLBrand07L Lollies - Variant E,LOLBrand07L,Confectionery,Lollies,2.59,24,8,True
+200276,LOLBrand07L Lollies - Variant F,LOLBrand07L,Confectionery,Lollies,2.59,6,9,True
+200277,LOLBrand07L Lollies - Variant G,LOLBrand07L,Confectionery,Lollies,2.59,6,11,True
+200278,LOLBrand08L Lollies - Variant A,LOLBrand08L,Confectionery,Lollies,1.89,12,6,False
+200279,LOLBrand08L Lollies - Variant B,LOLBrand08L,Confectionery,Lollies,1.89,12,11,True
+200280,LOLBrand08L Lollies - Variant C,LOLBrand08L,Confectionery,Lollies,1.89,12,11,True
+200281,LOLBrand08L Lollies - Variant D,LOLBrand08L,Confectionery,Lollies,1.89,24,9,True
+200282,LOLBrand08L Lollies - Variant E,LOLBrand08L,Confectionery,Lollies,1.89,6,11,True
+200283,LOLBrand08L Lollies - Variant F,LOLBrand08L,Confectionery,Lollies,1.89,24,7,False
+200284,LOLBrand09L Lollies - Variant A,LOLBrand09L,Confectionery,Lollies,1.89,12,5,False
+200285,LOLBrand09L Lollies - Variant B,LOLBrand09L,Confectionery,Lollies,1.89,6,6,False
+200286,LOLBrand09L Lollies - Variant C,LOLBrand09L,Confectionery,Lollies,1.89,12,9,True
+200287,LOLBrand09L Lollies - Variant D,LOLBrand09L,Confectionery,Lollies,1.89,12,11,True
+200288,LOLBrand09L Lollies - Variant E,LOLBrand09L,Confectionery,Lollies,1.89,12,9,True
+200289,LOLBrand09L Lollies - Variant F,LOLBrand09L,Confectionery,Lollies,1.89,12,5,False
+200290,LOLBrand09L Lollies - Variant G,LOLBrand09L,Confectionery,Lollies,1.89,12,7,False
+200291,LOLBrand10L Lollies - Variant A,LOLBrand10L,Confectionery,Lollies,1.99,12,9,True
+200292,LOLBrand10L Lollies - Variant B,LOLBrand10L,Confectionery,Lollies,1.99,6,7,False
+200293,LOLBrand10L Lollies - Variant C,LOLBrand10L,Confectionery,Lollies,1.99,12,5,False
+200294,LOLBrand10L Lollies - Variant D,LOLBrand10L,Confectionery,Lollies,1.99,6,8,True
+200295,LOLBrand10L Lollies - Variant E,LOLBrand10L,Confectionery,Lollies,1.99,24,11,True
+200296,LOLBrand10L Lollies - Variant F,LOLBrand10L,Confectionery,Lollies,1.99,6,5,False
+200297,LOLBrand11L Lollies - Variant A,LOLBrand11L,Confectionery,Lollies,4.09,24,8,True
+200298,LOLBrand11L Lollies - Variant B,LOLBrand11L,Confectionery,Lollies,4.09,6,7,False
+200299,LOLBrand11L Lollies - Variant C,LOLBrand11L,Confectionery,Lollies,4.09,12,8,True
+200300,LOLBrand11L Lollies - Variant D,LOLBrand11L,Confectionery,Lollies,4.09,24,11,True
+200301,LOLBrand11L Lollies - Variant E,LOLBrand11L,Confectionery,Lollies,4.09,12,6,False
+200302,LOLBrand11L Lollies - Variant F,LOLBrand11L,Confectionery,Lollies,4.09,24,7,False
+200303,LOLBrand11L Lollies - Variant G,LOLBrand11L,Confectionery,Lollies,4.09,24,10,True
+200304,SOFBrand01D Soft Drinks - Variant A,SOFBrand01D,Beverages,Soft Drinks,3.09,24,8,True
+200305,SOFBrand01D Soft Drinks - Variant B,SOFBrand01D,Beverages,Soft Drinks,3.09,24,6,False
+200306,SOFBrand01D Soft Drinks - Variant C,SOFBrand01D,Beverages,Soft Drinks,3.09,24,8,True
+200307,SOFBrand01D Soft Drinks - Variant D,SOFBrand01D,Beverages,Soft Drinks,3.09,12,9,True
+200308,SOFBrand01D Soft Drinks - Variant E,SOFBrand01D,Beverages,Soft Drinks,3.09,12,5,False
+200309,SOFBrand01D Soft Drinks - Variant F,SOFBrand01D,Beverages,Soft Drinks,3.09,12,5,False
+200310,SOFBrand01D Soft Drinks - Variant G,SOFBrand01D,Beverages,Soft Drinks,3.09,24,9,True
+200311,SOFBrand02D Soft Drinks - Variant A,SOFBrand02D,Beverages,Soft Drinks,7.79,12,8,True
+200312,SOFBrand02D Soft Drinks - Variant B,SOFBrand02D,Beverages,Soft Drinks,7.79,24,5,False
+200313,SOFBrand02D Soft Drinks - Variant C,SOFBrand02D,Beverages,Soft Drinks,7.79,24,5,False
+200314,SOFBrand02D Soft Drinks - Variant D,SOFBrand02D,Beverages,Soft Drinks,7.79,24,9,True
+200315,SOFBrand02D Soft Drinks - Variant E,SOFBrand02D,Beverages,Soft Drinks,7.79,24,6,False
+200316,SOFBrand02D Soft Drinks - Variant F,SOFBrand02D,Beverages,Soft Drinks,7.79,24,9,True
+200317,SOFBrand03D Soft Drinks - Variant A,SOFBrand03D,Beverages,Soft Drinks,5.09,24,9,True
+200318,SOFBrand03D Soft Drinks - Variant B,SOFBrand03D,Beverages,Soft Drinks,5.09,12,10,True
+200319,SOFBrand03D Soft Drinks - Variant C,SOFBrand03D,Beverages,Soft Drinks,5.09,24,7,False
+200320,SOFBrand03D Soft Drinks - Variant D,SOFBrand03D,Beverages,Soft Drinks,5.09,24,9,True
+200321,SOFBrand03D Soft Drinks - Variant E,SOFBrand03D,Beverages,Soft Drinks,5.09,12,7,False
+200322,SOFBrand03D Soft Drinks - Variant F,SOFBrand03D,Beverages,Soft Drinks,5.09,12,8,True
+200323,SOFBrand04D Soft Drinks - Variant A,SOFBrand04D,Beverages,Soft Drinks,4.89,24,5,False
+200324,SOFBrand04D Soft Drinks - Variant B,SOFBrand04D,Beverages,Soft Drinks,4.89,12,11,True
+200325,SOFBrand04D Soft Drinks - Variant C,SOFBrand04D,Beverages,Soft Drinks,4.89,12,5,False
+200326,SOFBrand04D Soft Drinks - Variant D,SOFBrand04D,Beverages,Soft Drinks,4.89,24,10,True
+200327,SOFBrand04D Soft Drinks - Variant E,SOFBrand04D,Beverages,Soft Drinks,4.89,24,7,False
+200328,SOFBrand04D Soft Drinks - Variant F,SOFBrand04D,Beverages,Soft Drinks,4.89,12,11,True
+200329,JUIBrand01J Juice - Variant A,JUIBrand01J,Beverages,Juice,7.39,24,12,True
+200330,JUIBrand01J Juice - Variant B,JUIBrand01J,Beverages,Juice,7.39,24,12,True
+200331,JUIBrand01J Juice - Variant C,JUIBrand01J,Beverages,Juice,7.39,24,8,True
+200332,JUIBrand01J Juice - Variant D,JUIBrand01J,Beverages,Juice,7.39,12,8,True
+200333,JUIBrand01J Juice - Variant E,JUIBrand01J,Beverages,Juice,7.39,24,12,True
+200334,JUIBrand01J Juice - Variant F,JUIBrand01J,Beverages,Juice,7.39,24,8,True
+200335,JUIBrand02J Juice - Variant A,JUIBrand02J,Beverages,Juice,4.49,24,8,True
+200336,JUIBrand02J Juice - Variant B,JUIBrand02J,Beverages,Juice,4.49,24,8,True
+200337,JUIBrand02J Juice - Variant C,JUIBrand02J,Beverages,Juice,4.49,12,9,True
+200338,JUIBrand02J Juice - Variant D,JUIBrand02J,Beverages,Juice,4.49,24,8,True
+200339,JUIBrand02J Juice - Variant E,JUIBrand02J,Beverages,Juice,4.49,24,7,False
+200340,JUIBrand02J Juice - Variant F,JUIBrand02J,Beverages,Juice,4.49,12,11,True
+200341,JUIBrand03J Juice - Variant A,JUIBrand03J,Beverages,Juice,3.29,12,8,True
+200342,JUIBrand03J Juice - Variant B,JUIBrand03J,Beverages,Juice,3.29,24,8,True
+200343,JUIBrand03J Juice - Variant C,JUIBrand03J,Beverages,Juice,3.29,12,9,True
+200344,JUIBrand03J Juice - Variant D,JUIBrand03J,Beverages,Juice,3.29,12,10,True
+200345,JUIBrand03J Juice - Variant E,JUIBrand03J,Beverages,Juice,3.29,24,9,True
+200346,JUIBrand04J Juice - Variant A,JUIBrand04J,Beverages,Juice,7.69,12,9,True
+200347,JUIBrand04J Juice - Variant B,JUIBrand04J,Beverages,Juice,7.69,24,5,False
+200348,JUIBrand04J Juice - Variant C,JUIBrand04J,Beverages,Juice,7.69,24,6,False
+200349,JUIBrand04J Juice - Variant D,JUIBrand04J,Beverages,Juice,7.69,24,10,True
+200350,JUIBrand04J Juice - Variant E,JUIBrand04J,Beverages,Juice,7.69,12,7,False
+200351,JUIBrand04J Juice - Variant F,JUIBrand04J,Beverages,Juice,7.69,12,9,True
+200352,WATBrand01W Water - Variant A,WATBrand01W,Beverages,Water,4.19,24,5,False
+200353,WATBrand01W Water - Variant B,WATBrand01W,Beverages,Water,4.19,12,12,True
+200354,WATBrand01W Water - Variant C,WATBrand01W,Beverages,Water,4.19,12,5,False
+200355,WATBrand01W Water - Variant D,WATBrand01W,Beverages,Water,4.19,24,9,True
+200356,WATBrand01W Water - Variant E,WATBrand01W,Beverages,Water,4.19,12,11,True
+200357,WATBrand02W Water - Variant A,WATBrand02W,Beverages,Water,7.79,12,5,False
+200358,WATBrand02W Water - Variant B,WATBrand02W,Beverages,Water,7.79,24,5,False
+200359,WATBrand02W Water - Variant C,WATBrand02W,Beverages,Water,7.79,12,5,False
+200360,WATBrand02W Water - Variant D,WATBrand02W,Beverages,Water,7.79,12,11,True
+200361,WATBrand03W Water - Variant A,WATBrand03W,Beverages,Water,1.59,24,10,True
+200362,WATBrand03W Water - Variant B,WATBrand03W,Beverages,Water,1.59,12,5,False
+200363,WATBrand03W Water - Variant C,WATBrand03W,Beverages,Water,1.59,12,11,True
+200364,WATBrand03W Water - Variant D,WATBrand03W,Beverages,Water,1.59,12,10,True
+200365,WATBrand04W Water - Variant A,WATBrand04W,Beverages,Water,5.09,12,9,True
+200366,WATBrand04W Water - Variant B,WATBrand04W,Beverages,Water,5.09,24,6,False
+200367,WATBrand04W Water - Variant C,WATBrand04W,Beverages,Water,5.09,12,7,False
+200368,WATBrand04W Water - Variant D,WATBrand04W,Beverages,Water,5.09,24,9,True
+200369,MILBrand01M Milk - Variant A,MILBrand01M,Dairy,Milk,3.19,6,6,False
+200370,MILBrand01M Milk - Variant B,MILBrand01M,Dairy,Milk,3.19,12,8,True
+200371,MILBrand01M Milk - Variant C,MILBrand01M,Dairy,Milk,3.19,6,4,False
+200372,MILBrand02M Milk - Variant A,MILBrand02M,Dairy,Milk,6.49,24,7,False
+200373,MILBrand02M Milk - Variant B,MILBrand02M,Dairy,Milk,6.49,12,5,False
+200374,MILBrand02M Milk - Variant C,MILBrand02M,Dairy,Milk,6.49,12,5,False
+200375,MILBrand02M Milk - Variant D,MILBrand02M,Dairy,Milk,6.49,24,6,False
+200376,MILBrand03M Milk - Variant A,MILBrand03M,Dairy,Milk,3.79,6,7,False
+200377,MILBrand03M Milk - Variant B,MILBrand03M,Dairy,Milk,3.79,6,6,False
+200378,MILBrand03M Milk - Variant C,MILBrand03M,Dairy,Milk,3.79,24,4,False
+200379,MILBrand04M Milk - Variant A,MILBrand04M,Dairy,Milk,2.19,6,8,True
+200380,MILBrand04M Milk - Variant B,MILBrand04M,Dairy,Milk,2.19,24,5,False
+200381,MILBrand04M Milk - Variant C,MILBrand04M,Dairy,Milk,2.19,24,6,False
+200382,MILBrand05M Milk - Variant A,MILBrand05M,Dairy,Milk,2.79,12,5,False
+200383,MILBrand05M Milk - Variant B,MILBrand05M,Dairy,Milk,2.79,12,5,False
+200384,MILBrand05M Milk - Variant C,MILBrand05M,Dairy,Milk,2.79,12,5,False
+200385,MILBrand05M Milk - Variant D,MILBrand05M,Dairy,Milk,2.79,24,6,False
+200386,YOGBrand01Y Yoghurt - Variant A,YOGBrand01Y,Dairy,Yoghurt,7.39,12,4,False
+200387,YOGBrand01Y Yoghurt - Variant B,YOGBrand01Y,Dairy,Yoghurt,7.39,24,4,False
+200388,YOGBrand01Y Yoghurt - Variant C,YOGBrand01Y,Dairy,Yoghurt,7.39,12,7,False
+200389,YOGBrand01Y Yoghurt - Variant D,YOGBrand01Y,Dairy,Yoghurt,7.39,24,5,False
+200390,YOGBrand01Y Yoghurt - Variant E,YOGBrand01Y,Dairy,Yoghurt,7.39,6,4,False
+200391,YOGBrand02Y Yoghurt - Variant A,YOGBrand02Y,Dairy,Yoghurt,6.79,12,4,False
+200392,YOGBrand02Y Yoghurt - Variant B,YOGBrand02Y,Dairy,Yoghurt,6.79,6,4,False
+200393,YOGBrand02Y Yoghurt - Variant C,YOGBrand02Y,Dairy,Yoghurt,6.79,12,5,False
+200394,YOGBrand02Y Yoghurt - Variant D,YOGBrand02Y,Dairy,Yoghurt,6.79,12,8,True
+200395,YOGBrand02Y Yoghurt - Variant E,YOGBrand02Y,Dairy,Yoghurt,6.79,12,8,True
+200396,YOGBrand03Y Yoghurt - Variant A,YOGBrand03Y,Dairy,Yoghurt,5.79,24,6,False
+200397,YOGBrand03Y Yoghurt - Variant B,YOGBrand03Y,Dairy,Yoghurt,5.79,24,4,False
+200398,YOGBrand03Y Yoghurt - Variant C,YOGBrand03Y,Dairy,Yoghurt,5.79,12,6,False
+200399,YOGBrand03Y Yoghurt - Variant D,YOGBrand03Y,Dairy,Yoghurt,5.79,6,7,False
+200400,YOGBrand03Y Yoghurt - Variant E,YOGBrand03Y,Dairy,Yoghurt,5.79,24,6,False
+200401,YOGBrand04Y Yoghurt - Variant A,YOGBrand04Y,Dairy,Yoghurt,5.09,6,5,False
+200402,YOGBrand04Y Yoghurt - Variant B,YOGBrand04Y,Dairy,Yoghurt,5.09,24,5,False
+200403,YOGBrand04Y Yoghurt - Variant C,YOGBrand04Y,Dairy,Yoghurt,5.09,6,6,False
+200404,YOGBrand04Y Yoghurt - Variant D,YOGBrand04Y,Dairy,Yoghurt,5.09,12,8,True
+200405,YOGBrand04Y Yoghurt - Variant E,YOGBrand04Y,Dairy,Yoghurt,5.09,12,7,False
+200406,YOGBrand05Y Yoghurt - Variant A,YOGBrand05Y,Dairy,Yoghurt,3.09,6,4,False
+200407,YOGBrand05Y Yoghurt - Variant B,YOGBrand05Y,Dairy,Yoghurt,3.09,12,4,False
+200408,YOGBrand05Y Yoghurt - Variant C,YOGBrand05Y,Dairy,Yoghurt,3.09,6,5,False
+200409,YOGBrand05Y Yoghurt - Variant D,YOGBrand05Y,Dairy,Yoghurt,3.09,6,5,False
+200410,YOGBrand06Y Yoghurt - Variant A,YOGBrand06Y,Dairy,Yoghurt,3.89,24,4,False
+200411,YOGBrand06Y Yoghurt - Variant B,YOGBrand06Y,Dairy,Yoghurt,3.89,12,4,False
+200412,YOGBrand06Y Yoghurt - Variant C,YOGBrand06Y,Dairy,Yoghurt,3.89,24,6,False
+200413,YOGBrand06Y Yoghurt - Variant D,YOGBrand06Y,Dairy,Yoghurt,3.89,6,8,True
+200414,YOGBrand06Y Yoghurt - Variant E,YOGBrand06Y,Dairy,Yoghurt,3.89,6,5,False
+200415,CHEBrand01C Cheese - Variant A,CHEBrand01C,Dairy,Cheese,2.49,24,8,True
+200416,CHEBrand01C Cheese - Variant B,CHEBrand01C,Dairy,Cheese,2.49,24,5,False
+200417,CHEBrand01C Cheese - Variant C,CHEBrand01C,Dairy,Cheese,2.49,6,5,False
+200418,CHEBrand02C Cheese - Variant A,CHEBrand02C,Dairy,Cheese,2.39,24,6,False
+200419,CHEBrand02C Cheese - Variant B,CHEBrand02C,Dairy,Cheese,2.39,24,6,False
+200420,CHEBrand02C Cheese - Variant C,CHEBrand02C,Dairy,Cheese,2.39,24,6,False
+200421,CHEBrand03C Cheese - Variant A,CHEBrand03C,Dairy,Cheese,2.19,12,5,False
+200422,CHEBrand03C Cheese - Variant B,CHEBrand03C,Dairy,Cheese,2.19,24,6,False
+200423,CHEBrand03C Cheese - Variant C,CHEBrand03C,Dairy,Cheese,2.19,24,4,False
+200424,CHEBrand03C Cheese - Variant D,CHEBrand03C,Dairy,Cheese,2.19,12,8,True
+200425,CHEBrand04C Cheese - Variant A,CHEBrand04C,Dairy,Cheese,5.39,12,5,False
+200426,CHEBrand04C Cheese - Variant B,CHEBrand04C,Dairy,Cheese,5.39,6,7,False
+200427,CHEBrand04C Cheese - Variant C,CHEBrand04C,Dairy,Cheese,5.39,6,4,False
+200428,CHEBrand05C Cheese - Variant A,CHEBrand05C,Dairy,Cheese,5.59,24,5,False
+200429,CHEBrand05C Cheese - Variant B,CHEBrand05C,Dairy,Cheese,5.59,6,4,False
+200430,CHEBrand05C Cheese - Variant C,CHEBrand05C,Dairy,Cheese,5.59,24,5,False
+200431,CHEBrand05C Cheese - Variant D,CHEBrand05C,Dairy,Cheese,5.59,24,7,False
+200432,CHEBrand06C Cheese - Variant A,CHEBrand06C,Dairy,Cheese,6.39,24,4,False
+200433,CHEBrand06C Cheese - Variant B,CHEBrand06C,Dairy,Cheese,6.39,6,5,False
+200434,CHEBrand06C Cheese - Variant C,CHEBrand06C,Dairy,Cheese,6.39,12,8,True
+200435,CHEBrand07C Cheese - Variant A,CHEBrand07C,Dairy,Cheese,7.39,24,5,False
+200436,CHEBrand07C Cheese - Variant B,CHEBrand07C,Dairy,Cheese,7.39,6,6,False
+200437,CHEBrand07C Cheese - Variant C,CHEBrand07C,Dairy,Cheese,7.39,6,8,True
+200438,CHEBrand07C Cheese - Variant D,CHEBrand07C,Dairy,Cheese,7.39,6,4,False
+200439,DIPBrand01D Dips - Variant A,DIPBrand01D,Dairy,Dips,2.59,12,7,False
+200440,DIPBrand01D Dips - Variant B,DIPBrand01D,Dairy,Dips,2.59,12,6,False
+200441,DIPBrand01D Dips - Variant C,DIPBrand01D,Dairy,Dips,2.59,24,4,False
+200442,DIPBrand01D Dips - Variant D,DIPBrand01D,Dairy,Dips,2.59,24,6,False
+200443,DIPBrand02D Dips - Variant A,DIPBrand02D,Dairy,Dips,2.09,24,7,False
+200444,DIPBrand02D Dips - Variant B,DIPBrand02D,Dairy,Dips,2.09,24,5,False
+200445,DIPBrand02D Dips - Variant C,DIPBrand02D,Dairy,Dips,2.09,24,7,False
+200446,DIPBrand03D Dips - Variant A,DIPBrand03D,Dairy,Dips,6.89,12,6,False
+200447,DIPBrand03D Dips - Variant B,DIPBrand03D,Dairy,Dips,6.89,12,4,False
+200448,DIPBrand03D Dips - Variant C,DIPBrand03D,Dairy,Dips,6.89,12,6,False
+200449,DIPBrand04D Dips - Variant A,DIPBrand04D,Dairy,Dips,3.69,12,8,True
+200450,DIPBrand04D Dips - Variant B,DIPBrand04D,Dairy,Dips,3.69,12,5,False
+200451,DIPBrand04D Dips - Variant C,DIPBrand04D,Dairy,Dips,3.69,24,7,False
+200452,DIPBrand04D Dips - Variant D,DIPBrand04D,Dairy,Dips,3.69,6,7,False
+200453,DIPBrand05D Dips - Variant A,DIPBrand05D,Dairy,Dips,6.39,12,4,False
+200454,DIPBrand05D Dips - Variant B,DIPBrand05D,Dairy,Dips,6.39,12,8,True
+200455,DIPBrand05D Dips - Variant C,DIPBrand05D,Dairy,Dips,6.39,24,6,False
+200456,DIPBrand05D Dips - Variant D,DIPBrand05D,Dairy,Dips,6.39,6,7,False
+200457,DIPBrand06D Dips - Variant A,DIPBrand06D,Dairy,Dips,5.19,12,5,False
+200458,DIPBrand06D Dips - Variant B,DIPBrand06D,Dairy,Dips,5.19,24,8,True
+200459,DIPBrand06D Dips - Variant C,DIPBrand06D,Dairy,Dips,5.19,12,5,False
+200460,BREBrand01B Bread - Variant A,BREBrand01B,Bakery,Bread,3.29,6,6,False
+200461,BREBrand01B Bread - Variant B,BREBrand01B,Bakery,Bread,3.29,6,5,False
+200462,BREBrand01B Bread - Variant C,BREBrand01B,Bakery,Bread,3.29,6,3,False
+200463,BREBrand01B Bread - Variant D,BREBrand01B,Bakery,Bread,3.29,24,3,False
+200464,BREBrand02B Bread - Variant A,BREBrand02B,Bakery,Bread,3.89,24,5,False
+200465,BREBrand02B Bread - Variant B,BREBrand02B,Bakery,Bread,3.89,24,4,False
+200466,BREBrand02B Bread - Variant C,BREBrand02B,Bakery,Bread,3.89,6,3,False
+200467,BREBrand02B Bread - Variant D,BREBrand02B,Bakery,Bread,3.89,12,4,False
+200468,BREBrand03B Bread - Variant A,BREBrand03B,Bakery,Bread,2.49,6,5,False
+200469,BREBrand03B Bread - Variant B,BREBrand03B,Bakery,Bread,2.49,24,4,False
+200470,BREBrand03B Bread - Variant C,BREBrand03B,Bakery,Bread,2.49,6,5,False
+200471,BREBrand03B Bread - Variant D,BREBrand03B,Bakery,Bread,2.49,12,6,False
+200472,BREBrand04B Bread - Variant A,BREBrand04B,Bakery,Bread,2.19,24,6,False
+200473,BREBrand04B Bread - Variant B,BREBrand04B,Bakery,Bread,2.19,6,3,False
+200474,BREBrand04B Bread - Variant C,BREBrand04B,Bakery,Bread,2.19,12,4,False
+200475,BREBrand05B Bread - Variant A,BREBrand05B,Bakery,Bread,5.29,24,3,False
+200476,BREBrand05B Bread - Variant B,BREBrand05B,Bakery,Bread,5.29,12,5,False
+200477,BREBrand05B Bread - Variant C,BREBrand05B,Bakery,Bread,5.29,12,4,False
+200478,BREBrand06B Bread - Variant A,BREBrand06B,Bakery,Bread,3.39,6,4,False
+200479,BREBrand06B Bread - Variant B,BREBrand06B,Bakery,Bread,3.39,24,4,False
+200480,BREBrand06B Bread - Variant C,BREBrand06B,Bakery,Bread,3.39,12,6,False
+200481,PASBrand01P Pastries - Variant A,PASBrand01P,Bakery,Pastries,5.59,6,4,False
+200482,PASBrand01P Pastries - Variant B,PASBrand01P,Bakery,Pastries,5.59,24,5,False
+200483,PASBrand01P Pastries - Variant C,PASBrand01P,Bakery,Pastries,5.59,6,5,False
+200484,PASBrand02P Pastries - Variant A,PASBrand02P,Bakery,Pastries,2.89,24,5,False
+200485,PASBrand02P Pastries - Variant B,PASBrand02P,Bakery,Pastries,2.89,12,4,False
+200486,PASBrand02P Pastries - Variant C,PASBrand02P,Bakery,Pastries,2.89,24,3,False
+200487,PASBrand03P Pastries - Variant A,PASBrand03P,Bakery,Pastries,4.19,24,4,False
+200488,PASBrand03P Pastries - Variant B,PASBrand03P,Bakery,Pastries,4.19,24,5,False
+200489,PASBrand03P Pastries - Variant C,PASBrand03P,Bakery,Pastries,4.19,12,6,False
+200490,PASBrand03P Pastries - Variant D,PASBrand03P,Bakery,Pastries,4.19,24,6,False
+200491,PASBrand04P Pastries - Variant A,PASBrand04P,Bakery,Pastries,5.49,12,6,False
+200492,PASBrand04P Pastries - Variant B,PASBrand04P,Bakery,Pastries,5.49,24,5,False
+200493,PASBrand04P Pastries - Variant C,PASBrand04P,Bakery,Pastries,5.49,6,6,False
+200494,PASBrand05P Pastries - Variant A,PASBrand05P,Bakery,Pastries,2.59,6,3,False
+200495,PASBrand05P Pastries - Variant B,PASBrand05P,Bakery,Pastries,2.59,24,5,False
+200496,PASBrand05P Pastries - Variant C,PASBrand05P,Bakery,Pastries,2.59,12,3,False
+200497,PASBrand06P Pastries - Variant A,PASBrand06P,Bakery,Pastries,2.79,6,4,False
+200498,PASBrand06P Pastries - Variant B,PASBrand06P,Bakery,Pastries,2.79,12,5,False
+200499,PASBrand06P Pastries - Variant C,PASBrand06P,Bakery,Pastries,2.79,12,3,False
+200500,PASBrand06P Pastries - Variant D,PASBrand06P,Bakery,Pastries,2.79,6,4,False
+200501,CAKBrand01C Cakes - Variant A,CAKBrand01C,Bakery,Cakes,2.39,24,3,False
+200502,CAKBrand01C Cakes - Variant B,CAKBrand01C,Bakery,Cakes,2.39,6,3,False
+200503,CAKBrand01C Cakes - Variant C,CAKBrand01C,Bakery,Cakes,2.39,24,3,False
+200504,CAKBrand01C Cakes - Variant D,CAKBrand01C,Bakery,Cakes,2.39,6,6,False
+200505,CAKBrand02C Cakes - Variant A,CAKBrand02C,Bakery,Cakes,4.89,24,5,False
+200506,CAKBrand02C Cakes - Variant B,CAKBrand02C,Bakery,Cakes,4.89,12,6,False
+200507,CAKBrand02C Cakes - Variant C,CAKBrand02C,Bakery,Cakes,4.89,24,5,False
+200508,CAKBrand03C Cakes - Variant A,CAKBrand03C,Bakery,Cakes,3.39,12,4,False
+200509,CAKBrand03C Cakes - Variant B,CAKBrand03C,Bakery,Cakes,3.39,12,6,False
+200510,CAKBrand03C Cakes - Variant C,CAKBrand03C,Bakery,Cakes,3.39,24,4,False
+200511,CAKBrand04C Cakes - Variant A,CAKBrand04C,Bakery,Cakes,3.79,12,5,False
+200512,CAKBrand04C Cakes - Variant B,CAKBrand04C,Bakery,Cakes,3.79,12,3,False
+200513,CAKBrand04C Cakes - Variant C,CAKBrand04C,Bakery,Cakes,3.79,6,4,False
+200514,CAKBrand04C Cakes - Variant D,CAKBrand04C,Bakery,Cakes,3.79,24,3,False
+200515,CAKBrand05C Cakes - Variant A,CAKBrand05C,Bakery,Cakes,4.89,6,6,False
+200516,CAKBrand05C Cakes - Variant B,CAKBrand05C,Bakery,Cakes,4.89,6,6,False
+200517,CAKBrand05C Cakes - Variant C,CAKBrand05C,Bakery,Cakes,4.89,24,6,False
+200518,CAKBrand06C Cakes - Variant A,CAKBrand06C,Bakery,Cakes,2.59,12,5,False
+200519,CAKBrand06C Cakes - Variant B,CAKBrand06C,Bakery,Cakes,2.59,12,3,False
+200520,CAKBrand06C Cakes - Variant C,CAKBrand06C,Bakery,Cakes,2.59,6,5,False
+200521,CAKBrand06C Cakes - Variant D,CAKBrand06C,Bakery,Cakes,2.59,6,4,False
+200522,SOABrand01S Soaps - Variant A,SOABrand01S,Toiletries,Soaps,11.29,12,2,False
+200523,SOABrand01S Soaps - Variant B,SOABrand01S,Toiletries,Soaps,11.29,6,2,False
+200524,SOABrand01S Soaps - Variant C,SOABrand01S,Toiletries,Soaps,11.29,12,3,False
+200525,SOABrand02S Soaps - Variant A,SOABrand02S,Toiletries,Soaps,4.29,6,2,False
+200526,SOABrand02S Soaps - Variant B,SOABrand02S,Toiletries,Soaps,4.29,12,4,False
+200527,SOABrand02S Soaps - Variant C,SOABrand02S,Toiletries,Soaps,4.29,24,4,False
+200528,SOABrand03S Soaps - Variant A,SOABrand03S,Toiletries,Soaps,8.09,6,4,False
+200529,SOABrand03S Soaps - Variant B,SOABrand03S,Toiletries,Soaps,8.09,6,2,False
+200530,SOABrand03S Soaps - Variant C,SOABrand03S,Toiletries,Soaps,8.09,6,3,False
+200531,SOABrand04S Soaps - Variant A,SOABrand04S,Toiletries,Soaps,2.49,24,4,False
+200532,SOABrand04S Soaps - Variant B,SOABrand04S,Toiletries,Soaps,2.49,6,5,False
+200533,SOABrand04S Soaps - Variant C,SOABrand04S,Toiletries,Soaps,2.49,24,3,False
+200534,TOOBrand01T Toothpaste - Variant A,TOOBrand01T,Toiletries,Toothpaste,11.29,24,3,False
+200535,TOOBrand01T Toothpaste - Variant B,TOOBrand01T,Toiletries,Toothpaste,11.29,24,3,False
+200536,TOOBrand01T Toothpaste - Variant C,TOOBrand01T,Toiletries,Toothpaste,11.29,24,2,False
+200537,TOOBrand02T Toothpaste - Variant A,TOOBrand02T,Toiletries,Toothpaste,2.79,12,4,False
+200538,TOOBrand02T Toothpaste - Variant B,TOOBrand02T,Toiletries,Toothpaste,2.79,6,5,False
+200539,TOOBrand02T Toothpaste - Variant C,TOOBrand02T,Toiletries,Toothpaste,2.79,12,4,False
+200540,TOOBrand03T Toothpaste - Variant A,TOOBrand03T,Toiletries,Toothpaste,2.79,6,2,False
+200541,TOOBrand03T Toothpaste - Variant B,TOOBrand03T,Toiletries,Toothpaste,2.79,24,4,False
+200542,TOOBrand03T Toothpaste - Variant C,TOOBrand03T,Toiletries,Toothpaste,2.79,12,3,False
+200543,TOOBrand04T Toothpaste - Variant A,TOOBrand04T,Toiletries,Toothpaste,2.59,24,2,False
+200544,TOOBrand04T Toothpaste - Variant B,TOOBrand04T,Toiletries,Toothpaste,2.59,6,2,False
+200545,TOOBrand04T Toothpaste - Variant C,TOOBrand04T,Toiletries,Toothpaste,2.59,12,2,False
+200546,TOOBrand05T Toothpaste - Variant A,TOOBrand05T,Toiletries,Toothpaste,10.69,6,2,False
+200547,TOOBrand05T Toothpaste - Variant B,TOOBrand05T,Toiletries,Toothpaste,10.69,6,4,False
+200548,TOOBrand05T Toothpaste - Variant C,TOOBrand05T,Toiletries,Toothpaste,10.69,6,5,False
+200549,DEOBrand01D Deodorant - Variant A,DEOBrand01D,Toiletries,Deodorant,6.29,24,4,False
+200550,DEOBrand01D Deodorant - Variant B,DEOBrand01D,Toiletries,Deodorant,6.29,12,3,False
+200551,DEOBrand01D Deodorant - Variant C,DEOBrand01D,Toiletries,Deodorant,6.29,6,2,False
+200552,DEOBrand02D Deodorant - Variant A,DEOBrand02D,Toiletries,Deodorant,2.79,24,5,False
+200553,DEOBrand02D Deodorant - Variant B,DEOBrand02D,Toiletries,Deodorant,2.79,6,3,False
+200554,DEOBrand02D Deodorant - Variant C,DEOBrand02D,Toiletries,Deodorant,2.79,24,3,False
+200555,DEOBrand02D Deodorant - Variant D,DEOBrand02D,Toiletries,Deodorant,2.79,12,4,False
+200556,DEOBrand03D Deodorant - Variant A,DEOBrand03D,Toiletries,Deodorant,7.49,12,2,False
+200557,DEOBrand03D Deodorant - Variant B,DEOBrand03D,Toiletries,Deodorant,7.49,12,3,False
+200558,DEOBrand03D Deodorant - Variant C,DEOBrand03D,Toiletries,Deodorant,7.49,24,4,False
+200559,DEOBrand03D Deodorant - Variant D,DEOBrand03D,Toiletries,Deodorant,7.49,6,5,False
+200560,DEOBrand04D Deodorant - Variant A,DEOBrand04D,Toiletries,Deodorant,5.69,24,4,False
+200561,DEOBrand04D Deodorant - Variant B,DEOBrand04D,Toiletries,Deodorant,5.69,12,5,False
+200562,DEOBrand04D Deodorant - Variant C,DEOBrand04D,Toiletries,Deodorant,5.69,24,3,False
+200563,DEOBrand05D Deodorant - Variant A,DEOBrand05D,Toiletries,Deodorant,8.59,24,2,False
+200564,DEOBrand05D Deodorant - Variant B,DEOBrand05D,Toiletries,Deodorant,8.59,12,4,False
+200565,DEOBrand05D Deodorant - Variant C,DEOBrand05D,Toiletries,Deodorant,8.59,6,4,False
+200566,DEOBrand05D Deodorant - Variant D,DEOBrand05D,Toiletries,Deodorant,8.59,6,5,False
+200567,DEOBrand06D Deodorant - Variant A,DEOBrand06D,Toiletries,Deodorant,7.69,24,5,False
+200568,DEOBrand06D Deodorant - Variant B,DEOBrand06D,Toiletries,Deodorant,7.69,24,4,False
+200569,DEOBrand06D Deodorant - Variant C,DEOBrand06D,Toiletries,Deodorant,7.69,12,2,False
+200570,BODBrand01W Body Wash - Variant A,BODBrand01W,Toiletries,Body Wash,5.69,24,4,False
+200571,BODBrand01W Body Wash - Variant B,BODBrand01W,Toiletries,Body Wash,5.69,24,2,False
+200572,BODBrand01W Body Wash - Variant C,BODBrand01W,Toiletries,Body Wash,5.69,12,5,False
+200573,BODBrand02W Body Wash - Variant A,BODBrand02W,Toiletries,Body Wash,10.19,12,3,False
+200574,BODBrand02W Body Wash - Variant B,BODBrand02W,Toiletries,Body Wash,10.19,6,4,False
+200575,BODBrand02W Body Wash - Variant C,BODBrand02W,Toiletries,Body Wash,10.19,6,3,False
+200576,BODBrand02W Body Wash - Variant D,BODBrand02W,Toiletries,Body Wash,10.19,24,3,False
+200577,BODBrand03W Body Wash - Variant A,BODBrand03W,Toiletries,Body Wash,5.59,12,4,False
+200578,BODBrand03W Body Wash - Variant B,BODBrand03W,Toiletries,Body Wash,5.59,6,4,False
+200579,BODBrand03W Body Wash - Variant C,BODBrand03W,Toiletries,Body Wash,5.59,6,4,False
+200580,BODBrand03W Body Wash - Variant D,BODBrand03W,Toiletries,Body Wash,5.59,6,4,False
+200581,BODBrand04W Body Wash - Variant A,BODBrand04W,Toiletries,Body Wash,10.79,12,5,False
+200582,BODBrand04W Body Wash - Variant B,BODBrand04W,Toiletries,Body Wash,10.79,6,3,False
+200583,BODBrand04W Body Wash - Variant C,BODBrand04W,Toiletries,Body Wash,10.79,6,4,False
+200584,BODBrand05W Body Wash - Variant A,BODBrand05W,Toiletries,Body Wash,5.69,12,4,False
+200585,BODBrand05W Body Wash - Variant B,BODBrand05W,Toiletries,Body Wash,5.69,24,4,False
+200586,BODBrand05W Body Wash - Variant C,BODBrand05W,Toiletries,Body Wash,5.69,6,4,False
+200587,BODBrand05W Body Wash - Variant D,BODBrand05W,Toiletries,Body Wash,5.69,12,2,False
+200588,BODBrand06W Body Wash - Variant A,BODBrand06W,Toiletries,Body Wash,9.89,6,3,False
+200589,BODBrand06W Body Wash - Variant B,BODBrand06W,Toiletries,Body Wash,9.89,24,5,False
+200590,BODBrand06W Body Wash - Variant C,BODBrand06W,Toiletries,Body Wash,9.89,12,5,False
+200591,BODBrand07W Body Wash - Variant A,BODBrand07W,Toiletries,Body Wash,9.79,12,2,False
+200592,BODBrand07W Body Wash - Variant B,BODBrand07W,Toiletries,Body Wash,9.79,24,3,False
+200593,BODBrand07W Body Wash - Variant C,BODBrand07W,Toiletries,Body Wash,9.79,24,3,False
+200594,BODBrand07W Body Wash - Variant D,BODBrand07W,Toiletries,Body Wash,9.79,6,5,False
+200595,HANBrand01W Hand Wash - Variant A,HANBrand01W,Toiletries,Hand Wash,7.09,6,3,False
+200596,HANBrand01W Hand Wash - Variant B,HANBrand01W,Toiletries,Hand Wash,7.09,12,5,False
+200597,HANBrand01W Hand Wash - Variant C,HANBrand01W,Toiletries,Hand Wash,7.09,6,2,False
+200598,HANBrand02W Hand Wash - Variant A,HANBrand02W,Toiletries,Hand Wash,4.89,24,3,False
+200599,HANBrand02W Hand Wash - Variant B,HANBrand02W,Toiletries,Hand Wash,4.89,12,3,False
+200600,HANBrand02W Hand Wash - Variant C,HANBrand02W,Toiletries,Hand Wash,4.89,6,3,False
+200601,HANBrand02W Hand Wash - Variant D,HANBrand02W,Toiletries,Hand Wash,4.89,12,2,False
+200602,HANBrand03W Hand Wash - Variant A,HANBrand03W,Toiletries,Hand Wash,5.09,12,3,False
+200603,HANBrand03W Hand Wash - Variant B,HANBrand03W,Toiletries,Hand Wash,5.09,6,5,False
+200604,HANBrand03W Hand Wash - Variant C,HANBrand03W,Toiletries,Hand Wash,5.09,6,3,False
+200605,HANBrand04W Hand Wash - Variant A,HANBrand04W,Toiletries,Hand Wash,5.09,6,2,False
+200606,HANBrand04W Hand Wash - Variant B,HANBrand04W,Toiletries,Hand Wash,5.09,12,3,False
+200607,HANBrand04W Hand Wash - Variant C,HANBrand04W,Toiletries,Hand Wash,5.09,24,5,False
+200608,HANBrand05W Hand Wash - Variant A,HANBrand05W,Toiletries,Hand Wash,3.49,24,2,False
+200609,HANBrand05W Hand Wash - Variant B,HANBrand05W,Toiletries,Hand Wash,3.49,24,2,False
+200610,HANBrand05W Hand Wash - Variant C,HANBrand05W,Toiletries,Hand Wash,3.49,24,3,False
+200611,HANBrand05W Hand Wash - Variant D,HANBrand05W,Toiletries,Hand Wash,3.49,12,5,False
+200612,HANBrand06W Hand Wash - Variant A,HANBrand06W,Toiletries,Hand Wash,8.19,24,2,False
+200613,HANBrand06W Hand Wash - Variant B,HANBrand06W,Toiletries,Hand Wash,8.19,6,3,False
+200614,HANBrand06W Hand Wash - Variant C,HANBrand06W,Toiletries,Hand Wash,8.19,12,2,False
+200615,DISBrand01L Dishwashing liquid - Variant A,DISBrand01L,Cleaning,Dishwashing liquid,9.89,24,2,False
+200616,DISBrand01L Dishwashing liquid - Variant B,DISBrand01L,Cleaning,Dishwashing liquid,9.89,24,4,False
+200617,DISBrand01L Dishwashing liquid - Variant C,DISBrand01L,Cleaning,Dishwashing liquid,9.89,24,4,False
+200618,DISBrand01L Dishwashing liquid - Variant D,DISBrand01L,Cleaning,Dishwashing liquid,9.89,12,3,False
+200619,DISBrand02L Dishwashing liquid - Variant A,DISBrand02L,Cleaning,Dishwashing liquid,4.39,24,3,False
+200620,DISBrand02L Dishwashing liquid - Variant B,DISBrand02L,Cleaning,Dishwashing liquid,4.39,12,1,False
+200621,DISBrand02L Dishwashing liquid - Variant C,DISBrand02L,Cleaning,Dishwashing liquid,4.39,24,3,False
+200622,DISBrand02L Dishwashing liquid - Variant D,DISBrand02L,Cleaning,Dishwashing liquid,4.39,24,3,False
+200623,DISBrand03L Dishwashing liquid - Variant A,DISBrand03L,Cleaning,Dishwashing liquid,18.59,24,3,False
+200624,DISBrand03L Dishwashing liquid - Variant B,DISBrand03L,Cleaning,Dishwashing liquid,18.59,24,3,False
+200625,DISBrand03L Dishwashing liquid - Variant C,DISBrand03L,Cleaning,Dishwashing liquid,18.59,12,2,False
+200626,DISBrand04L Dishwashing liquid - Variant A,DISBrand04L,Cleaning,Dishwashing liquid,14.29,12,2,False
+200627,DISBrand04L Dishwashing liquid - Variant B,DISBrand04L,Cleaning,Dishwashing liquid,14.29,12,4,False
+200628,DISBrand04L Dishwashing liquid - Variant C,DISBrand04L,Cleaning,Dishwashing liquid,14.29,24,2,False
+200629,DISBrand04L Dishwashing liquid - Variant D,DISBrand04L,Cleaning,Dishwashing liquid,14.29,24,3,False
+200630,DISBrand05L Dishwashing liquid - Variant A,DISBrand05L,Cleaning,Dishwashing liquid,5.79,12,3,False
+200631,DISBrand05L Dishwashing liquid - Variant B,DISBrand05L,Cleaning,Dishwashing liquid,5.79,12,2,False
+200632,DISBrand05L Dishwashing liquid - Variant C,DISBrand05L,Cleaning,Dishwashing liquid,5.79,12,1,False
+200633,DISBrand05L Dishwashing liquid - Variant D,DISBrand05L,Cleaning,Dishwashing liquid,5.79,12,2,False
+200634,DISBrand01T Dishwashing tablet - Variant A,DISBrand01T,Cleaning,Dishwashing tablet,16.09,12,1,False
+200635,DISBrand01T Dishwashing tablet - Variant B,DISBrand01T,Cleaning,Dishwashing tablet,16.09,12,4,False
+200636,DISBrand01T Dishwashing tablet - Variant C,DISBrand01T,Cleaning,Dishwashing tablet,16.09,12,1,False
+200637,DISBrand02T Dishwashing tablet - Variant A,DISBrand02T,Cleaning,Dishwashing tablet,14.99,12,2,False
+200638,DISBrand02T Dishwashing tablet - Variant B,DISBrand02T,Cleaning,Dishwashing tablet,14.99,12,3,False
+200639,DISBrand02T Dishwashing tablet - Variant C,DISBrand02T,Cleaning,Dishwashing tablet,14.99,24,3,False
+200640,DISBrand02T Dishwashing tablet - Variant D,DISBrand02T,Cleaning,Dishwashing tablet,14.99,24,1,False
+200641,DISBrand03T Dishwashing tablet - Variant A,DISBrand03T,Cleaning,Dishwashing tablet,14.79,24,2,False
+200642,DISBrand03T Dishwashing tablet - Variant B,DISBrand03T,Cleaning,Dishwashing tablet,14.79,12,4,False
+200643,DISBrand03T Dishwashing tablet - Variant C,DISBrand03T,Cleaning,Dishwashing tablet,14.79,24,1,False
+200644,DISBrand03T Dishwashing tablet - Variant D,DISBrand03T,Cleaning,Dishwashing tablet,14.79,12,3,False
+200645,DISBrand04T Dishwashing tablet - Variant A,DISBrand04T,Cleaning,Dishwashing tablet,19.39,12,2,False
+200646,DISBrand04T Dishwashing tablet - Variant B,DISBrand04T,Cleaning,Dishwashing tablet,19.39,12,3,False
+200647,DISBrand04T Dishwashing tablet - Variant C,DISBrand04T,Cleaning,Dishwashing tablet,19.39,24,3,False
+200648,DISBrand05T Dishwashing tablet - Variant A,DISBrand05T,Cleaning,Dishwashing tablet,12.19,24,3,False
+200649,DISBrand05T Dishwashing tablet - Variant B,DISBrand05T,Cleaning,Dishwashing tablet,12.19,12,3,False
+200650,DISBrand05T Dishwashing tablet - Variant C,DISBrand05T,Cleaning,Dishwashing tablet,12.19,12,1,False
+200651,DISBrand05T Dishwashing tablet - Variant D,DISBrand05T,Cleaning,Dishwashing tablet,12.19,24,1,False
+200652,DISBrand06T Dishwashing tablet - Variant A,DISBrand06T,Cleaning,Dishwashing tablet,13.79,24,1,False
+200653,DISBrand06T Dishwashing tablet - Variant B,DISBrand06T,Cleaning,Dishwashing tablet,13.79,24,1,False
+200654,DISBrand06T Dishwashing tablet - Variant C,DISBrand06T,Cleaning,Dishwashing tablet,13.79,12,3,False
+200655,DISBrand06T Dishwashing tablet - Variant D,DISBrand06T,Cleaning,Dishwashing tablet,13.79,12,2,False
+200656,LAUBrand01D Laundry detergent - Variant A,LAUBrand01D,Cleaning,Laundry detergent,18.99,24,4,False
+200657,LAUBrand01D Laundry detergent - Variant B,LAUBrand01D,Cleaning,Laundry detergent,18.99,12,4,False
+200658,LAUBrand01D Laundry detergent - Variant C,LAUBrand01D,Cleaning,Laundry detergent,18.99,12,1,False
+200659,LAUBrand02D Laundry detergent - Variant A,LAUBrand02D,Cleaning,Laundry detergent,12.39,12,2,False
+200660,LAUBrand02D Laundry detergent - Variant B,LAUBrand02D,Cleaning,Laundry detergent,12.39,12,2,False
+200661,LAUBrand02D Laundry detergent - Variant C,LAUBrand02D,Cleaning,Laundry detergent,12.39,12,1,False
+200662,LAUBrand02D Laundry detergent - Variant D,LAUBrand02D,Cleaning,Laundry detergent,12.39,12,1,False
+200663,LAUBrand03D Laundry detergent - Variant A,LAUBrand03D,Cleaning,Laundry detergent,18.69,12,3,False
+200664,LAUBrand03D Laundry detergent - Variant B,LAUBrand03D,Cleaning,Laundry detergent,18.69,24,1,False
+200665,LAUBrand03D Laundry detergent - Variant C,LAUBrand03D,Cleaning,Laundry detergent,18.69,24,3,False
+200666,LAUBrand03D Laundry detergent - Variant D,LAUBrand03D,Cleaning,Laundry detergent,18.69,12,4,False
+200667,LAUBrand04D Laundry detergent - Variant A,LAUBrand04D,Cleaning,Laundry detergent,10.69,12,2,False
+200668,LAUBrand04D Laundry detergent - Variant B,LAUBrand04D,Cleaning,Laundry detergent,10.69,24,1,False
+200669,LAUBrand04D Laundry detergent - Variant C,LAUBrand04D,Cleaning,Laundry detergent,10.69,24,3,False
+200670,LAUBrand05D Laundry detergent - Variant A,LAUBrand05D,Cleaning,Laundry detergent,6.89,24,1,False
+200671,LAUBrand05D Laundry detergent - Variant B,LAUBrand05D,Cleaning,Laundry detergent,6.89,12,3,False
+200672,LAUBrand05D Laundry detergent - Variant C,LAUBrand05D,Cleaning,Laundry detergent,6.89,24,3,False
+200673,LAUBrand05D Laundry detergent - Variant D,LAUBrand05D,Cleaning,Laundry detergent,6.89,12,2,False
+200674,LAUBrand06D Laundry detergent - Variant A,LAUBrand06D,Cleaning,Laundry detergent,9.89,24,3,False
+200675,LAUBrand06D Laundry detergent - Variant B,LAUBrand06D,Cleaning,Laundry detergent,9.89,24,1,False
+200676,LAUBrand06D Laundry detergent - Variant C,LAUBrand06D,Cleaning,Laundry detergent,9.89,24,1,False
+200677,LAUBrand07D Laundry detergent - Variant A,LAUBrand07D,Cleaning,Laundry detergent,8.39,24,1,False
+200678,LAUBrand07D Laundry detergent - Variant B,LAUBrand07D,Cleaning,Laundry detergent,8.39,24,1,False
+200679,LAUBrand07D Laundry detergent - Variant C,LAUBrand07D,Cleaning,Laundry detergent,8.39,24,4,False
+200680,LAUBrand07D Laundry detergent - Variant D,LAUBrand07D,Cleaning,Laundry detergent,8.39,12,2,False
+200681,CERBrand01C Cereals - Variant A,CERBrand01C,Breakfast,Cereals,6.19,24,5,False
+200682,CERBrand01C Cereals - Variant B,CERBrand01C,Breakfast,Cereals,6.19,6,7,False
+200683,CERBrand01C Cereals - Variant C,CERBrand01C,Breakfast,Cereals,6.19,24,4,False
+200684,CERBrand01C Cereals - Variant D,CERBrand01C,Breakfast,Cereals,6.19,24,5,False
+200685,CERBrand01C Cereals - Variant E,CERBrand01C,Breakfast,Cereals,6.19,6,6,False
+200686,CERBrand01C Cereals - Variant F,CERBrand01C,Breakfast,Cereals,6.19,6,3,False
+200687,CERBrand02C Cereals - Variant A,CERBrand02C,Breakfast,Cereals,3.29,24,3,False
+200688,CERBrand02C Cereals - Variant B,CERBrand02C,Breakfast,Cereals,3.29,12,3,False
+200689,CERBrand02C Cereals - Variant C,CERBrand02C,Breakfast,Cereals,3.29,24,3,False
+200690,CERBrand02C Cereals - Variant D,CERBrand02C,Breakfast,Cereals,3.29,6,6,False
+200691,CERBrand02C Cereals - Variant E,CERBrand02C,Breakfast,Cereals,3.29,12,3,False
+200692,CERBrand02C Cereals - Variant F,CERBrand02C,Breakfast,Cereals,3.29,24,3,False
+200693,CERBrand03C Cereals - Variant A,CERBrand03C,Breakfast,Cereals,6.29,12,4,False
+200694,CERBrand03C Cereals - Variant B,CERBrand03C,Breakfast,Cereals,6.29,6,7,False
+200695,CERBrand03C Cereals - Variant C,CERBrand03C,Breakfast,Cereals,6.29,6,3,False
+200696,CERBrand03C Cereals - Variant D,CERBrand03C,Breakfast,Cereals,6.29,24,3,False
+200697,CERBrand03C Cereals - Variant E,CERBrand03C,Breakfast,Cereals,6.29,6,3,False
+200698,CERBrand03C Cereals - Variant F,CERBrand03C,Breakfast,Cereals,6.29,24,6,False
+200699,CERBrand04C Cereals - Variant A,CERBrand04C,Breakfast,Cereals,9.59,24,7,False
+200700,CERBrand04C Cereals - Variant B,CERBrand04C,Breakfast,Cereals,9.59,12,6,False
+200701,CERBrand04C Cereals - Variant C,CERBrand04C,Breakfast,Cereals,9.59,12,5,False
+200702,CERBrand04C Cereals - Variant D,CERBrand04C,Breakfast,Cereals,9.59,12,7,False
+200703,CERBrand04C Cereals - Variant E,CERBrand04C,Breakfast,Cereals,9.59,24,3,False
+200704,CERBrand05C Cereals - Variant A,CERBrand05C,Breakfast,Cereals,9.89,6,6,False
+200705,CERBrand05C Cereals - Variant B,CERBrand05C,Breakfast,Cereals,9.89,24,7,False
+200706,CERBrand05C Cereals - Variant C,CERBrand05C,Breakfast,Cereals,9.89,12,7,False
+200707,CERBrand05C Cereals - Variant D,CERBrand05C,Breakfast,Cereals,9.89,24,4,False
+200708,CERBrand05C Cereals - Variant E,CERBrand05C,Breakfast,Cereals,9.89,6,4,False
+200709,CERBrand06C Cereals - Variant A,CERBrand06C,Breakfast,Cereals,4.49,24,4,False
+200710,CERBrand06C Cereals - Variant B,CERBrand06C,Breakfast,Cereals,4.49,6,7,False
+200711,CERBrand06C Cereals - Variant C,CERBrand06C,Breakfast,Cereals,4.49,6,3,False
+200712,CERBrand06C Cereals - Variant D,CERBrand06C,Breakfast,Cereals,4.49,12,5,False
+200713,CERBrand06C Cereals - Variant E,CERBrand06C,Breakfast,Cereals,4.49,6,3,False
+200714,CERBrand07C Cereals - Variant A,CERBrand07C,Breakfast,Cereals,4.79,12,4,False
+200715,CERBrand07C Cereals - Variant B,CERBrand07C,Breakfast,Cereals,4.79,24,3,False
+200716,CERBrand07C Cereals - Variant C,CERBrand07C,Breakfast,Cereals,4.79,12,5,False
+200717,CERBrand07C Cereals - Variant D,CERBrand07C,Breakfast,Cereals,4.79,6,7,False
+200718,CERBrand07C Cereals - Variant E,CERBrand07C,Breakfast,Cereals,4.79,6,3,False
+200719,CERBrand08C Cereals - Variant A,CERBrand08C,Breakfast,Cereals,9.29,24,4,False
+200720,CERBrand08C Cereals - Variant B,CERBrand08C,Breakfast,Cereals,9.29,24,3,False
+200721,CERBrand08C Cereals - Variant C,CERBrand08C,Breakfast,Cereals,9.29,6,5,False
+200722,CERBrand08C Cereals - Variant D,CERBrand08C,Breakfast,Cereals,9.29,24,3,False
+200723,CERBrand08C Cereals - Variant E,CERBrand08C,Breakfast,Cereals,9.29,12,3,False
+200724,CERBrand09C Cereals - Variant A,CERBrand09C,Breakfast,Cereals,8.99,6,3,False
+200725,CERBrand09C Cereals - Variant B,CERBrand09C,Breakfast,Cereals,8.99,24,5,False
+200726,CERBrand09C Cereals - Variant C,CERBrand09C,Breakfast,Cereals,8.99,24,4,False
+200727,CERBrand09C Cereals - Variant D,CERBrand09C,Breakfast,Cereals,8.99,6,5,False
+200728,CERBrand09C Cereals - Variant E,CERBrand09C,Breakfast,Cereals,8.99,12,4,False
+200729,CERBrand10C Cereals - Variant A,CERBrand10C,Breakfast,Cereals,3.59,6,7,False
+200730,CERBrand10C Cereals - Variant B,CERBrand10C,Breakfast,Cereals,3.59,6,7,False
+200731,CERBrand10C Cereals - Variant C,CERBrand10C,Breakfast,Cereals,3.59,6,4,False
+200732,CERBrand10C Cereals - Variant D,CERBrand10C,Breakfast,Cereals,3.59,24,7,False
+200733,CERBrand10C Cereals - Variant E,CERBrand10C,Breakfast,Cereals,3.59,24,4,False
+200734,CERBrand10C Cereals - Variant F,CERBrand10C,Breakfast,Cereals,3.59,24,4,False
+200735,OATBrand01O Oats - Variant A,OATBrand01O,Breakfast,Oats,9.09,6,5,False
+200736,OATBrand01O Oats - Variant B,OATBrand01O,Breakfast,Oats,9.09,24,5,False
+200737,OATBrand01O Oats - Variant C,OATBrand01O,Breakfast,Oats,9.09,6,3,False
+200738,OATBrand02O Oats - Variant A,OATBrand02O,Breakfast,Oats,8.89,12,7,False
+200739,OATBrand02O Oats - Variant B,OATBrand02O,Breakfast,Oats,8.89,24,6,False
+200740,OATBrand02O Oats - Variant C,OATBrand02O,Breakfast,Oats,8.89,12,5,False
+200741,OATBrand03O Oats - Variant A,OATBrand03O,Breakfast,Oats,4.29,6,5,False
+200742,OATBrand03O Oats - Variant B,OATBrand03O,Breakfast,Oats,4.29,6,4,False
+200743,OATBrand03O Oats - Variant C,OATBrand03O,Breakfast,Oats,4.29,24,5,False
+200744,OATBrand04O Oats - Variant A,OATBrand04O,Breakfast,Oats,8.79,6,5,False
+200745,OATBrand04O Oats - Variant B,OATBrand04O,Breakfast,Oats,8.79,12,4,False
+200746,OATBrand04O Oats - Variant C,OATBrand04O,Breakfast,Oats,8.79,6,7,False
+200747,OATBrand04O Oats - Variant D,OATBrand04O,Breakfast,Oats,8.79,24,6,False
+200748,OATBrand05O Oats - Variant A,OATBrand05O,Breakfast,Oats,4.39,6,5,False
+200749,OATBrand05O Oats - Variant B,OATBrand05O,Breakfast,Oats,4.39,6,3,False
+200750,OATBrand05O Oats - Variant C,OATBrand05O,Breakfast,Oats,4.39,6,4,False
+200751,OATBrand06O Oats - Variant A,OATBrand06O,Breakfast,Oats,8.49,12,5,False
+200752,OATBrand06O Oats - Variant B,OATBrand06O,Breakfast,Oats,8.49,6,4,False
+200753,OATBrand06O Oats - Variant C,OATBrand06O,Breakfast,Oats,8.49,24,4,False
+200754,OATBrand06O Oats - Variant D,OATBrand06O,Breakfast,Oats,8.49,24,6,False

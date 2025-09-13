@@ -1,0 +1,12 @@
+# Secrets and configs
+.streamlit/secrets.toml
+*.env
+config.toml
+
+# Python virtual environment
+.venv/
+__pycache__/
+*.pyc
+
+# OS/system files
+.DS_Store

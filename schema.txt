@@ -1,0 +1,150 @@
+-- ========================
+-- BASE TABLES
+-- ========================
+
+CREATE TABLE stores (
+    store_id text PRIMARY KEY,
+    store_name text,
+    region text,
+    store_type text,
+    opening_date date,
+    store_area_sqm numeric
+);
+
+CREATE TABLE brands (
+    brand text PRIMARY KEY,
+    category text,
+    sub_category text,
+    promo_allowed boolean
+);
+
+CREATE TABLE products (
+    article_no text PRIMARY KEY,
+    product_name text,
+    brand text REFERENCES brands(brand),
+    category text,
+    sub_category text,
+    regular_price numeric,
+    order_multiple int,
+    base_demand int,
+    is_high_velocity boolean
+);
+
+CREATE TABLE promotions (
+    promo_id text PRIMARY KEY,
+    article_no text REFERENCES products(article_no),
+    store_id text REFERENCES stores(store_id),
+    start_date date,
+    end_date date,
+    offer_type text,
+    discount_pct numeric,
+    promo_channel text,
+    has_endcap boolean,
+    on_promo_bay boolean,
+    brand text,
+    category text,
+    sub_category text
+);
+
+CREATE TABLE sales_transactions (
+    date date,
+    store_id text REFERENCES stores(store_id),
+    article_no text REFERENCES products(article_no),
+    units_sold numeric,
+    sale_price numeric,
+    is_promo int,
+    promo_id text
+);
+
+-- ========================
+-- HELPER FUNCTION
+-- ========================
+
+-- Calculates Wednesday-starting promo week for a given date
+CREATE OR REPLACE FUNCTION week_start_wed(d date)
+RETURNS date LANGUAGE sql IMMUTABLE AS $$
+  SELECT (date_trunc('week', d + INTERVAL '4 days') - INTERVAL '4 days')::date;
+$$;
+
+-- ========================
+-- SAFE VIEWS (LLM should query only these)
+-- ========================
+
+CREATE OR REPLACE VIEW v_sales_daily AS
+SELECT
+    st.date,
+    week_start_wed(st.date) AS promo_week_start_wed,
+    st.store_id,
+    st.article_no,
+    p.product_name,
+    p.brand,
+    p.category,
+    p.sub_category,
+    p.regular_price,
+    p.order_multiple,
+    p.base_demand,
+    p.is_high_velocity,
+    st.units_sold,
+    st.sale_price,
+    st.is_promo,
+    COALESCE(pr.discount_pct,
+             CASE WHEN p.regular_price > 0
+                  THEN GREATEST(0, 1 - st.sale_price / p.regular_price)
+             END
+    )::float AS discount_pct,
+    COALESCE(pr.promo_channel, 'unknown') AS promo_channel,
+    COALESCE(pr.has_endcap, false) AS has_endcap,
+    COALESCE(pr.on_promo_bay, false) AS on_promo_bay,
+    CASE WHEN p.regular_price > 0
+         THEN (st.sale_price / p.regular_price)::float
+    END AS price_ratio
+FROM sales_transactions st
+JOIN products p ON p.article_no = st.article_no
+LEFT JOIN promotions pr ON pr.promo_id = st.promo_id;
+
+CREATE OR REPLACE VIEW v_promos_active AS
+SELECT
+    pr.promo_id,
+    pr.article_no,
+    pr.store_id,
+    pr.start_date,
+    pr.end_date,
+    generate_series(pr.start_date, pr.end_date, '1 day')::date AS active_date,
+    pr.offer_type,
+    pr.discount_pct,
+    pr.promo_channel,
+    pr.has_endcap,
+    pr.on_promo_bay,
+    pr.brand,
+    pr.category,
+    pr.sub_category
+FROM promotions pr;
+
+-- ========================
+-- LOGS (for app / model trials)
+-- ========================
+
+CREATE TABLE runs (
+    id bigserial PRIMARY KEY,
+    asked_at timestamptz DEFAULT now(),
+    user_id text,
+    store_id text,
+    question text,
+    chosen_model text,
+    winner_latency_ms int,
+    winner_cost_usd numeric,
+    trials jsonb
+);
+
+-- ========================
+-- INDEXES
+-- ========================
+
+CREATE INDEX IF NOT EXISTS ix_sales_store_date
+    ON sales_transactions(store_id, date);
+
+CREATE INDEX IF NOT EXISTS ix_sales_article_date
+    ON sales_transactions(article_no, date);
+
+CREATE INDEX IF NOT EXISTS ix_promos_store_article_dates
+    ON promotions(store_id, article_no, start_date, end_date);
