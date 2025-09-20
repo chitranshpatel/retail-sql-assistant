@@ -1141,6 +1141,12 @@ st.markdown("""
 </div>
 """, unsafe_allow_html=True)
 
+# Description under hero header
+st.markdown(
+    "🔗 **Powered by a retail sales database:** Featuring stores, products, brands, promotions, and daily sales. "
+    "This app demonstrates how natural language questions can be turned into SQL queries and insights."
+)
+
 
 # Three-step feature guidance (moved above Ask box)
 c1, c2, c3 = st.columns(3)
