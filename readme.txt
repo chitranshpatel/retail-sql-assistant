@@ -1,137 +1,195 @@
-# =========================
+# 🛒 Retail Insights Assistant
 
-# UI
-
-# =========================
-
-st.title("🛒 Retail Assistant — ERD-aware SQL")
-with st.sidebar:
-store\_id = st.text\_input("Store ID", value="S001")
-user\_id  = st.text\_input("User (for logs)", value="demo\_user")
-st.caption("Interpreting vague time ranges as last 7 days • TZ: Australia/Melbourne • Promo week: Wed→Tue")
-st.caption("Examples: 'How much did article A1001 sell in last promo?' • 'Top 5 products by revenue last 7 days'")
-
-question = st.text\_input("Ask a question")
-
-if st.button("Ask") and question.strip():
-\# Optional: semantic cache lookup (placeholder)
-\_cached = cache\_lookup(store\_id, question)
-if \_cached:
-st.info("Served from cache.")
-st.dataframe(pd.read\_json(\_cached\[1]), use\_container\_width=True)
-
-````
-with st.spinner("Thinking..."):
-    messages = build_messages(store_id, question)
-    winner, trials = asyncio.run(try_models(messages))
-    sql = extract_sql(winner["text"])
-
-# Soft budget info
-total_est_cost = sum(t["cost_usd"] for t in trials)
-if total_est_cost > SOFT_COST_BUDGET:
-    st.warning(f"Estimated combined model cost ${total_est_cost:.4f} exceeds soft budget ${SOFT_COST_BUDGET:.2f}.")
-
-st.subheader("Chosen model & answer")
-st.write(f"**Model:** `{winner['model']}` • **Latency:** {winner['latency_ms']} ms • **Est. cost:** ${winner['cost_usd']:.4f}")
-
-if not sql:
-    st.error("No SQL found in the model's answer.")
-else:
-    # Validate & harden
-    err = None
-    if not looks_select_only(sql): err = "SQL is not SELECT-only."
-    elif contains_bad(sql):        err = "Blocked keyword in SQL."
-    elif not mentions_allowed_objects(sql): err = "SQL references objects outside allowed views/tables."
-
-    if err:
-        st.error(err)
-    else:
-        safe_sql = ensure_store_filter(sql, store_id)
-        safe_sql = ensure_limit(safe_sql)
-
-        st.markdown("**SQL used:**")
-        st.code(safe_sql, language="sql")
-
-        # Execute, with a single self-repair attempt on error
-        try:
-            cols, rows = run_sql(safe_sql)
-        except Exception as e:
-            # Repair loop
-            repair_messages = messages + [
-                {"role":"assistant","content":f"```sql\n{safe_sql}\n```"},
-                {"role":"user","content":f"Your SQL failed with error:\n{e}\nFix it and return ONLY corrected SQL in ```sql ...```."}
-            ]
-            repaired, _ = asyncio.run(try_models(repair_messages))
-            repaired_sql = extract_sql(repaired["text"])
-            if repaired_sql and looks_select_only(repaired_sql) and not contains_bad(repaired_sql) and mentions_allowed_objects(repaired_sql):
-                repaired_sql = ensure_store_filter(repaired_sql, store_id)
-                repaired_sql = ensure_limit(repaired_sql)
-                st.info("Auto-repaired the query once based on the DB error.")
-                st.code(repaired_sql, language="sql")
-                cols, rows = run_sql(repaired_sql)
-                safe_sql = repaired_sql
-            else:
-                st.error(f"SQL error: {e}")
-                log_run({
-                    "user_id": user_id, "store_id": store_id, "question": question,
-                    "chosen_model": winner["model"], "latency_ms": winner["latency_ms"],
-                    "cost_usd": winner["cost_usd"], "trials": trials
-                })
-                st.stop()
-
-        # Display results
-        if rows:
-            df = pd.DataFrame(rows, columns=cols)
-            st.dataframe(df, use_container_width=True)
-            num_cols = df.select_dtypes(include=["int64","float64"]).columns.tolist()
-            if num_cols:
-                st.bar_chart(df[num_cols[0]])
-            # (Optional) cache_store(store_id, question, safe_sql, df)
-        else:
-            st.info("Query returned 0 rows.")
-
-st.divider()
-st.subheader("Model trials (debug)")
-# Include tokens for observability
-trials_pretty = []
-for t in trials:
-    usage = t.get("usage", {}) or {}
-    trials_pretty.append({
-        "model": t["model"],
-        "latency_ms": t["latency_ms"],
-        "cost_usd": t["cost_usd"],
-        "score": t.get("score"),
-        "prompt_tokens": usage.get("prompt_tokens"),
-        "completion_tokens": usage.get("completion_tokens"),
-    })
-st.json(trials_pretty)
-
-# Persist run
-log_run({
-    "user_id": user_id, "store_id": store_id, "question": question,
-    "chosen_model": winner["model"], "latency_ms": winner["latency_ms"],
-    "cost_usd": winner["cost_usd"], "trials": trials
-})
-````
-
-````
+**Natural language to safe, SELECT-only SQL for retail analytics — with guardrails, multi-model LLM routing, and instant insights.**
 
 ---
 
-## How to add more models
-1) Find the model IDs on OpenRouter (Dashboard → Models), e.g.:
-   - `openrouter/openai/gpt-4o-mini`
-   - `openrouter/anthropic/claude-3.5-sonnet`
-   - `google/gemini-1.5-pro`
-   - `qwen/qwen2.5-72b-instruct`  
-2) Add entries to the `MODELS` list with their **per-1k token prices** (USD). Example:
+## Overview
 
-```python
-MODELS = [
-    {"id": "openrouter/openai/gpt-4o-mini",           "in": 0.0006, "out": 0.0024},
-    {"id": "openrouter/anthropic/claude-3.5-sonnet",  "in": 0.0030, "out": 0.0150},
-    {"id": "google/gemini-1.5-pro",                   "in": 0.0015, "out": 0.0050},
-    {"id": "qwen/qwen2.5-72b-instruct",               "in": 0.0001, "out": 0.0002},
-]
-````
+Retail Insights Assistant is a Streamlit app that lets users ask plain-English questions about retail sales, promotions, products, brands, and stores. The app translates these questions into safe, read-only SQL queries, runs them on a Postgres database, and returns results with charts and KPIs — all with strong guardrails and transparent model routing.
 
+- **Database:** Postgres with tables for stores, products, brands, promotions, and daily sales transactions.
+- **LLM Routing:** Multiple OpenRouter models run in parallel; the best answer is chosen by grounding score, cost, and latency.
+- **Guardrails:** Only SELECT/WITH queries, allow-listed views/tables, store/date scoping, and automatic error repair.
+- **UI:** Modern Streamlit interface with charts, data export, and full SQL transparency.
+
+---
+
+## Features
+
+- **Ask in plain English:** e.g., “Top 5 products by revenue in the last 7 days”
+- **Automatic SQL generation:** ERD-aware prompting, few-shot examples, and business rules
+- **Safe execution:** Only SELECT/WITH queries, read-only DB session, allow-listed objects
+- **Multi-model LLM routing:** Parallel calls to multiple models, with cost/latency tracking
+- **Store and date scoping:** All queries are filtered by store and anchored to the latest available data date
+- **Transparent results:** See the exact SQL, download results, and review per-model answers
+- **Portfolio-ready logs:** All runs are logged with metadata for reproducibility
+
+---
+
+## Data Model
+
+**Tables:**
+- `stores`: Store metadata (region, type, area, etc.)
+- `brands`: Brand/category hierarchy and promo eligibility
+- `products`: SKU-level product info, pricing, demand
+- `promotions`: Promo events, mechanics, and scope
+- `sales_transactions`: Daily sales, price, promo flags
+
+**Views (preferred for analytics):**
+- `v_sales_daily`: Enriched daily sales, discounts, promo context
+- `v_promos_active`: Promo calendar (one row per active day per promo)
+
+See [`schema.txt`](schema.txt) or the in-app "About" page for full details.
+
+---
+
+## Example Questions
+
+- “Top 5 products by revenue in the last 7 days”
+- “How much did article 200000 sell in its last promo?”
+- “Daily sales and discount for brand ‘CHIBrand01C’ last 14 days”
+- “Which categories grew week over week in S001?”
+
+---
+
+## How It Works
+
+1. **User asks a question** in plain English.
+2. **App builds a prompt** with ERD, views, few-shots, and business rules.
+3. **Multiple LLMs** (via OpenRouter) generate candidate SQL queries in parallel.
+4. **Best SQL is selected** by grounding score, cost, and latency.
+5. **Guardrails applied:** SELECT/WITH-only, store/date filters, allow-list, and error repair.
+6. **SQL runs on Postgres** (read-only, safe search_path).
+7. **Results displayed:** KPIs, table, chart, SQL, and per-model comparisons.
+8. **All runs logged** for reproducibility and analysis.
+
+---
+
+## Setup & Installation
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/your-org/retail-assistant-mvp.git
+cd retail-assistant-mvp
+```
+
+### 2. Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 3. Configure secrets
+
+Create a `.streamlit/secrets.toml` file with your credentials:
+
+```toml
+OPENROUTER_API_KEY = "sk-..."
+PG_CONN = "postgresql://user:password@host:port/dbname"
+```
+
+### 4. (Optional) Configure Streamlit theme
+
+Create `.streamlit/config.toml` for a light theme:
+
+```toml
+[theme]
+base="light"
+```
+
+### 5. Run the app
+
+```bash
+streamlit run app.py
+```
+
+The app will be available at [http://localhost:8501](http://localhost:8501).
+
+---
+
+## Project Structure
+
+```
+retail-assistant-mvp/
+├── app.py                        # Streamlit app entrypoint (UI, layout, interactions)
+├── load_csvs.py                  # Helper to load CSVs into Postgres
+├── schema.txt                    # Textual ERD/schema summary
+├── readme.txt                    # Project overview (replace with README.md)
+├── requirements.txt              # Python dependencies
+├── runtime.txt                   # Python runtime pin (for Streamlit Cloud)
+├── .gitignore                    # Standard ignores (.venv/, .DS_Store, etc.)
+├── data/                         # Sample CSV datasets
+│   ├── stores.csv
+│   ├── brands.csv
+│   ├── products.csv
+│   ├── promotions.csv
+│   └── sales_transactions.csv
+├── pages/                        # Streamlit multipage docs
+│   └── 01_About_the_Project.py   # About & documentation page
+├── src/
+│   └── retail_ai/                # Core app logic
+│       ├── __init__.py
+│       ├── settings.py           # Config, model list, constants, allow-lists
+│       ├── ui/
+│       │   └── styles.css        # Additional UI styling
+│       ├── adapters/             # External adapters (DB, LLM)
+│       │   ├── __init__.py
+│       │   ├── db.py             # Postgres access (read-only, limits, logging)
+│       │   └── llm_openrouter.py # OpenRouter client + model routing
+│       ├── domain/               # Domain rules & guardrails
+│       │   ├── __init__.py
+│       │   ├── guardrails.py     # SQL extraction, validation, safe rewrites
+│       │   └── prompts.py        # ERD, few-shots, message builder
+│       └── services/
+│           └── query_service.py  # Orchestrates LLM → SQL → DB → DataFrame
+└── .streamlit/                   # Streamlit config & secrets
+    ├── secrets.toml              # OPENROUTER_API_KEY, PG_CONN (not committed)
+    └── config.toml               # Streamlit UI/config options
+
+```
+
+---
+
+## Safety & Guardrails
+
+- **Read-only DB session** with safe `search_path`
+- **Single-statement SELECT/WITH** queries only (no DDL/DML)
+- **Allow-list:** Only views/tables defined in schema
+- **Auto-inject store/date filters** if missing
+- **Timeouts and row caps** on all queries
+- **Automatic SQL repair** for common errors
+- **No PII in prompts or logs**
+
+---
+
+## Extending & Customizing
+
+- **Add new models:** Edit `settings.py` to add or remove OpenRouter models.
+- **Change schema:** Update `schema.txt` and the ERD prompt in `app.py`.
+- **Add business rules:** Modify the prompt construction logic for new constraints.
+- **UI customization:** Edit CSS in `src/retail_ai/ui/styles.css`.
+
+---
+
+## Roadmap
+
+- Preflight SQL compilation before model selection
+- Richer visualizations (Altair/Plotly)
+- Semantic cache for repeated questions
+- Inline “why this SQL?” explanations
+- Admin dashboard for model performance/costs
+
+---
+
+## License
+
+MIT License. See [LICENSE](LICENSE).
+
+---
+
+## Author
+
+Built by Chitransh Patel 
+For questions or collaboration, open an issue or reach out via patel.chitransh2000@gmail.com
