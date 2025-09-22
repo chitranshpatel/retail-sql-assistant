@@ -1,7 +1,7 @@
 # Secrets and configs
 .streamlit/secrets.toml
 *.env
-config.toml
+#config.toml
 
 # Python virtual environment
 .venv/
