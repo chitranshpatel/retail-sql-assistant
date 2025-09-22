@@ -1119,6 +1119,24 @@ def _handle_query_modular(store_id: str, user_id: str, question: str):
 # =========================
 _inject_styles_from_file()
 
+# Global bump for main-page expanders (sidebar untouched)
+st.markdown(
+    """
+<style>
+  .stApp [data-testid="stExpander"] summary {
+    font-size: 1.15rem !important;
+    font-weight: 700 !important;
+  }
+  /* Preserve sidebar expander sizing */
+  [data-testid="stSidebar"] [data-testid="stExpander"] summary {
+    font-size: 1.0rem !important;
+    font-weight: 700 !important;
+  }
+</style>
+""",
+    unsafe_allow_html=True,
+)
+
 # Hero header
 st.markdown("""
 <div class="hero">
@@ -1186,6 +1204,98 @@ with st.form(key="ask_form"):
     with c3:
         clear_submit = st.form_submit_button("Clear", use_container_width=True)
 st.markdown('</div>', unsafe_allow_html=True)
+
+# === About the data (Columns & SQL tips) — collapsed by default ===
+with st.expander("📚 About the data (columns & SQL tips)", expanded=False):
+    tabs = st.tabs(["Columns", "How the SQL works"])
+
+    # --- Columns tab ---
+    with tabs[0]:
+        st.caption("Browse the views first (recommended), or peek at base tables.")
+        objects = [
+            "v_sales_daily", "v_promos_active",
+            "stores", "brands", "products", "promotions", "sales_transactions"
+        ]
+        obj = st.selectbox("Choose a view/table", options=objects, index=0, key="about_obj")
+
+        # Use your cfg.COLUMNS if available; fallback to DESCR keys
+        colset = (COLUMNS.get(obj) if isinstance(COLUMNS, dict) else None) or set()
+
+        DESCR = {
+            "v_sales_daily": {
+                "date":"daily grain","promo_week_start_wed":"Wed→Tue promo week start",
+                "store_id":"store code","article_no":"SKU/article","product_name":"display name",
+                "brand":"brand code","category":"top-level category","sub_category":"granular category",
+                "regular_price":"everyday shelf price","order_multiple":"carton multiple",
+                "base_demand":"nominal base demand","is_high_velocity":"high-throughput flag",
+                "units_sold":"units sold","sale_price":"actual price",
+                "is_promo":"0/1 promo flag","discount_pct":"% off regular price",
+                "promo_channel":"Catalog/Digital/In-Store","has_endcap":"endcap",
+                "on_promo_bay":"promo bay","price_ratio":"sale_price/regular_price"
+            },
+            "v_promos_active": {
+                "promo_id":"promotion id","article_no":"SKU on promo","store_id":"store code",
+                "start_date":"promo start","end_date":"promo end","active_date":"each active day",
+                "offer_type":"mechanic","discount_pct":"% discount","promo_channel":"channel",
+                "has_endcap":"endcap","on_promo_bay":"promo bay","brand":"brand","category":"category","sub_category":"sub-category"
+            },
+            "stores":{"store_id":"PK","store_name":"name","region":"state/region","store_type":"format","opening_date":"opened","store_area_sqm":"size"},
+            "brands":{"brand":"PK","category":"category","sub_category":"subcat","promo_allowed":"can run promos"},
+            "products":{"article_no":"PK","product_name":"name","brand":"FK→brands","category":"category","sub_category":"subcat","regular_price":"price","order_multiple":"carton","base_demand":"base units","is_high_velocity":"fast mover"},
+            "promotions":{"promo_id":"PK","article_no":"FK→products","store_id":"FK→stores","start_date":"start","end_date":"end","offer_type":"mechanic","discount_pct":"%","promo_channel":"channel","has_endcap":"endcap","on_promo_bay":"bay","brand":"copy","category":"copy","sub_category":"copy"},
+            "sales_transactions":{"date":"day","store_id":"FK→stores","article_no":"FK→products","units_sold":"units","sale_price":"price","is_promo":"0/1","promo_id":"promo id (if any)"}
+        }
+
+        cols_sorted = sorted(colset, key=str.lower) if colset else sorted(DESCR.get(obj, {}).keys(), key=str.lower)
+        import pandas as pd
+        df_cols = pd.DataFrame([{"Column": c, "Description": DESCR.get(obj, {}).get(c, "")} for c in cols_sorted])
+        st.dataframe(df_cols, use_container_width=True, hide_index=True)
+
+        st.caption("Tip: start with **views** (`v_sales_daily`, `v_promos_active`).")
+
+    # --- How the SQL works tab ---
+    with tabs[1]:
+        st.markdown("**Rules the app follows:**")
+        st.write(
+            "- Single **SELECT/WITH** statement (no DDL/DML)\n"
+            "- Auto-scope to store: `store_id = 'S001'`\n"
+            "- “Last 7 days” anchored to **latest data date**, not today\n"
+            "- Case-insensitive text filters (`ILIKE`, or `LOWER(col)=LOWER('...')`)\n"
+            "- Prefer views; add `LIMIT` for listings"
+        )
+
+        st.code(
+            """-- Top products by revenue (last 7 days)
+SELECT article_no, product_name, SUM(units_sold * sale_price) AS revenue
+FROM v_sales_daily
+WHERE store_id = 'S001'
+  AND date BETWEEN (CURRENT_DATE - INTERVAL '6 days') AND CURRENT_DATE
+GROUP BY article_no, product_name
+ORDER BY revenue DESC
+LIMIT 10;""", language="sql"
+        )
+
+        st.code(
+            """-- Last promo units for a SKU (needs promo_id from v_promos_active)
+SELECT s.article_no, s.product_name,
+       MIN(s.date) AS promo_start, MAX(s.date) AS promo_end,
+       SUM(s.units_sold) AS units_last_promo
+FROM v_sales_daily s
+JOIN v_promos_active pa
+  ON pa.article_no = s.article_no
+ AND pa.store_id   = s.store_id
+ AND pa.active_date = s.date
+WHERE s.store_id = 'S001' AND s.article_no = '200000'
+GROUP BY s.article_no, s.product_name
+ORDER BY promo_end DESC
+LIMIT 1;""", language="sql"
+        )
+
+        st.page_link(
+            "pages/01_About_the_Project.py",
+            label="Open full About & Data Dictionary →",
+            icon="📘",
+        )
 
 # --- Model selector (main panel, not hidden) ---
 st.markdown("### ⚡ Model Settings")
