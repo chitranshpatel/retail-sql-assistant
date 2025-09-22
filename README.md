@@ -2,6 +2,11 @@
 
 **Natural language to safe, SELECT-only SQL for retail analytics — with guardrails, multi-model LLM routing, and instant insights.**
 
+
+<img width="1086" height="704" alt="Screenshot 2025-09-22 at 11 41 49 PM" src="https://github.com/user-attachments/assets/dae09712-cea6-4b6d-b331-5d58bc7168e1" />
+
+
+
 ---
 
 ## Overview
